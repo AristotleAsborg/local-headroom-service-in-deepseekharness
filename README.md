@@ -106,9 +106,12 @@ mcp__<server>__<tool> 出现）。一旦网络可达，把 headroom MCP 作为�
 
   项目              路径
   ----------------  ------------------------------------------------------
-  profile patch 行  D:\dsh\home\profiles\web\cordis.patch.yml
-  已安装包          D:\dsh\home\profiles\node_modules\dsh-plugin-headroom\
+  profile patch 行  dsh\home\profiles\web\cordis.patch.yml
+  
+  已安装包          dsh\home\profiles\node_modules\dsh-plugin-headroom\
+  
   源码（本目录）    D:\deepseek harness\headroom\
+
 
 安装位置不是随便选的：host row 用裸包名引用，解析器会从 profile 目录逐级向上找
 node_modules。<profiles>\node_modules 正是这一步能到达的位置（
