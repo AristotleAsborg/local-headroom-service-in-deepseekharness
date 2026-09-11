@@ -315,7 +315,7 @@ index.js, lib/, dsh-paths.mjs
 install.mjs, smoke-installed.mjs
 bench/, corpus/, tools/
 test/
-README.md, README.txt, USAGE.md, USAGE.txt, CHANGELOG.md, CHANGELOG.txt,
+README.txt, README.full.md, USAGE.txt, CHANGELOG.txt,
 PUBLISHING.md, LICENSE, NOTICE, package.json
 ```
 `headroom-package/`（独立安装包）是插件与安装脚本的副本，可以一起放，但要注意**同步**——
