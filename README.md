@@ -7,7 +7,7 @@ HEADROOM FOR THE DEEPSEEK HARNESS
 上下文压缩（context engineering）：把冗长的工具输出压成保留骨架的形式再读，原始
 内容凭 token 随时取回。
 
-本插件独立实现了开源项目 headroomlabs-ai/headroom
+本插件实现了开源项目 headroomlabs-ai/headroom
 (https://github.com/headroomlabs-ai/headroom) 发表的上下文压缩技术。上游用
 Python 实现并通过 MCP 暴露 headroom_compress / headroom_retrieve /
 headroom_stats 三个工具；这里把同样的技术写成 DSH host 插件。没有复制或翻译上游
