@@ -501,6 +501,14 @@ node install.mjs --print-paths
   大概原因: 先读文件再传 content
   怎么办: 改用 path
 
+  症状: 新建对话时选了工作区又弹回未选择
+  大概原因:
+    settings.yaml 里的默认 agent preset 指向一个已经不存在的 preset（早期版本装
+    过同名 preset，后来退役了）
+  怎么办:
+    跑一次 node install.mjs（会清掉那条悬空默认值）；或手动删掉
+    agent-presets.default 那一行。默认回落到随包的 standard，热重载，不必重启
+
 想确认装的是哪一份
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

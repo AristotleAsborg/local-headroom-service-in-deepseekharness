@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-headroom",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Context compression for the DeepSeek Harness: shrink bulky tool output by structure, keep the original retrievable by token. An independent implementation of the headroom project's techniques.",
   "type": "module",

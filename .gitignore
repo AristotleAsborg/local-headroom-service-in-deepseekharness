@@ -1,0 +1,11 @@
+# Machine-local state: every path is resolved by dsh-paths.mjs, so an override file
+# here is one machine's answer, not the project's.
+dsh-paths.json
+
+# Installed copies and their dependencies never belong to this repository.
+node_modules/
+
+# Backup and spill residue written while testing against a live deployment.
+*.bak
+*.bak-*
+spill/

@@ -506,6 +506,8 @@ headroom/
 │  └─ session-savings.mjs      # 会话负载的节省量（spill 目录由参数给出）
 ├─ USAGE.md                    # 使用指南（面向使用者：怎么用、出问题怎么判断）
 ├─ USAGE.txt                   # 同上，纯文本版
+├─ CHANGELOG.md                # 更新日志（按版本倒序，面向遇到问题的人）
+├─ CHANGELOG.txt               # 同上，纯文本版
 └─ test/
    ├─ engine.test.mjs          # 引擎（127 项）
    ├─ tool-contract.test.mjs   # 工具契约，用 harness 自己的校验器（111 项）
@@ -1673,7 +1675,9 @@ token。 压缩把一份副本换成了更小的一份，但代价是多留了�
 - 无 ML 阶段，因此对"语义上冗余但结构上不冗余"的内容压缩有限。
 - 不要再为它建 agent preset。 初版曾同时提供 preset，但 preset 在自身 scope 注册
   工具、host row 在全局注册，tools.register() 对重名直接抛错，选中该 preset 会失败
-  。常开方案已取代它，那个 preset 也因此被删除。
+  。常开方案已取代它，那个 preset 也因此被删除；install.mjs 退役它时会一并清掉指向
+  它的用户默认 preset——默认 preset 是会话未显式选择时的解析目标，留着一个已不存在
+  的名字会让每个新会话创建失败。
 
 授权与出处（请务必读这一段）
 --------------------------------------------------------------------------------
