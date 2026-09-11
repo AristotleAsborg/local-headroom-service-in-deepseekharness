@@ -1,0 +1,251 @@
+{
+  "generatedBy": "generate.mjs",
+  "conversations": [
+    {
+      "id": "conv-01-build-failure",
+      "title": "Debugging a nightly CI build failure",
+      "turns": [
+        {
+          "role": "user",
+          "text": "The nightly build failed. Can you find out why and fix it?"
+        },
+        {
+          "role": "assistant",
+          "text": "Reading the CI log first — it is long, so I will compress before reasoning over it."
+        },
+        {
+          "role": "user",
+          "text": "Fine, but do not lose the failing line."
+        },
+        {
+          "role": "assistant",
+          "text": "The failure is a connection reset while bundling the entry chunk, followed by 420 retry attempts that all failed."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "ci-build.log",
+          "kind": "log",
+          "chars": 150330,
+          "lines": 1604
+        },
+        {
+          "name": "vitest-output.txt",
+          "kind": "log",
+          "chars": 16446,
+          "lines": 352
+        },
+        {
+          "name": "package.json",
+          "kind": "json",
+          "chars": 1961,
+          "lines": 61
+        }
+      ]
+    },
+    {
+      "id": "conv-02-api-pagination",
+      "title": "Writing an importer against a paginated API",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Write the workspaces importer and make it tolerate rate limits."
+        },
+        {
+          "role": "assistant",
+          "text": "I will pull one page plus the metrics and error report to see the real shapes."
+        },
+        {
+          "role": "user",
+          "text": "How many records per page and what is the retry signal?"
+        },
+        {
+          "role": "assistant",
+          "text": "140 records per page, cursor-based; rate limits arrive as 429 with retry_after_ms."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "workspaces-page-1.json",
+          "kind": "json",
+          "chars": 122577,
+          "lines": 3648
+        },
+        {
+          "name": "metrics-dump.json",
+          "kind": "json",
+          "chars": 62020,
+          "lines": 4150
+        },
+        {
+          "name": "error-report.json",
+          "kind": "json",
+          "chars": 23755,
+          "lines": 485
+        }
+      ]
+    },
+    {
+      "id": "conv-03-refactor",
+      "title": "Refactoring the resolver behind a large diff",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Move the resolver onto the new node API, then show me the diff."
+        },
+        {
+          "role": "assistant",
+          "text": "Reading the module and the search results that reference resolveNode."
+        },
+        {
+          "role": "user",
+          "text": "That diff is mostly renames — how much is real?"
+        },
+        {
+          "role": "assistant",
+          "text": "Two hunks are real behaviour changes; the third is 40 identical import rewrites."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "src/cache.ts",
+          "kind": "code",
+          "chars": 33944,
+          "lines": 1173
+        },
+        {
+          "name": "resolver.diff",
+          "kind": "diff",
+          "chars": 15122,
+          "lines": 282
+        },
+        {
+          "name": "grep-resolveNode.txt",
+          "kind": "lines",
+          "chars": 17070,
+          "lines": 211
+        }
+      ]
+    },
+    {
+      "id": "conv-04-onboarding",
+      "title": "Mapping an unfamiliar repository",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I am new to this repo. Tell me how it is organized."
+        },
+        {
+          "role": "assistant",
+          "text": "Listing the tree, then reading the architecture doc and the lockfile."
+        },
+        {
+          "role": "user",
+          "text": "Which packages are direct dependencies?"
+        },
+        {
+          "role": "assistant",
+          "text": "Sixty direct dependencies, all under the @srv scope, mirrored by 90 locked packages."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "repo-listing.txt",
+          "kind": "lines",
+          "chars": 15676,
+          "lines": 423
+        },
+        {
+          "name": "docs/architecture.md",
+          "kind": "text",
+          "chars": 34004,
+          "lines": 344
+        },
+        {
+          "name": "pnpm-lock.yaml",
+          "kind": "json",
+          "chars": 35137,
+          "lines": 1425
+        }
+      ]
+    },
+    {
+      "id": "conv-05-flaky-e2e",
+      "title": "Triaging a flaky end-to-end run",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Checkout spec is flaky in CI again. Why?"
+        },
+        {
+          "role": "assistant",
+          "text": "Pulling the Playwright run, the network capture and the spec itself."
+        },
+        {
+          "role": "user",
+          "text": "Is it the test or the application?"
+        },
+        {
+          "role": "assistant",
+          "text": "The pay button is never enabled: the payments call returns 500 in the capture, and the spec retries three times."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "playwright-run.txt",
+          "kind": "lines",
+          "chars": 25326,
+          "lines": 379
+        },
+        {
+          "name": "network-har.json",
+          "kind": "json",
+          "chars": 68393,
+          "lines": 3091
+        },
+        {
+          "name": "e2e/specs/checkout.spec.ts",
+          "kind": "code",
+          "chars": 21179,
+          "lines": 389
+        }
+      ]
+    },
+    {
+      "id": "conv-06-spec-reading",
+      "title": "Reading a long protocol spec before implementing it",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Implement the compaction protocol from the spec."
+        },
+        {
+          "role": "assistant",
+          "text": "Compressing the spec and the conformance vectors before reading them properly."
+        },
+        {
+          "role": "user",
+          "text": "How many vectors must reject?"
+        },
+        {
+          "role": "assistant",
+          "text": "Sixteen of eighty: every fifth vector is tool-pairing-unbalanced and must be rejected."
+        }
+      ],
+      "payloads": [
+        {
+          "name": "spec/compaction-protocol.md",
+          "kind": "text",
+          "chars": 112662,
+          "lines": 604
+        },
+        {
+          "name": "spec/conformance-vectors.json",
+          "kind": "json",
+          "chars": 156180,
+          "lines": 4646
+        }
+      ]
+    }
+  ]
+}

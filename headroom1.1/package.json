@@ -1,0 +1,40 @@
+{
+  "name": "dsh-plugin-headroom",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Context compression for the DeepSeek Harness: shrink bulky tool output by structure, keep the original retrievable by token. An independent implementation of the headroom project's techniques.",
+  "type": "module",
+  "main": "./plugin/index.js",
+  "exports": {
+    ".": {
+      "default": "./plugin/index.js"
+    },
+    "./engine": {
+      "default": "./plugin/lib/engine.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "plugin/index.js",
+    "plugin/lib/engine.js"
+  ],
+  "scripts": {
+    "test": "node test/engine.test.mjs && node test/tool-contract.test.mjs && node test/verify-host.mjs",
+    "test:engine": "node test/engine.test.mjs",
+    "test:contract": "node test/tool-contract.test.mjs",
+    "test:host": "node test/verify-host.mjs",
+    "install-plugin": "node install.mjs",
+    "install:dry": "node install.mjs --dry-run",
+    "paths": "node install.mjs --print-paths",
+    "write-paths": "node install.mjs --write-paths"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "context-engineering",
+    "compression",
+    "token-budget",
+    "ai-agent"
+  ],
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,282 @@
+diff --git a/src/resolver.ts b/src/resolver.ts
+index 6afdcfb..d215323 100644
+file-a/src/resolver.ts
+file-b/src/resolver.ts
+@@ -14,28 +14,34 @@ export class Resolver {
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+-  const previous = state.nodes[index] ?? fallbackNode(index)
++  const previous = resolveNode(state, index, fallbackNode)
+@@ -96,12 +102,18 @@ export class Resolver {
++  if (frame.dirty) scheduler.mark(frame.id, 0)
++  if (frame.dirty) scheduler.mark(frame.id, 1)
++  if (frame.dirty) scheduler.mark(frame.id, 2)
++  if (frame.dirty) scheduler.mark(frame.id, 3)
++  if (frame.dirty) scheduler.mark(frame.id, 4)
++  if (frame.dirty) scheduler.mark(frame.id, 5)
++  if (frame.dirty) scheduler.mark(frame.id, 6)
++  if (frame.dirty) scheduler.mark(frame.id, 7)
++  if (frame.dirty) scheduler.mark(frame.id, 8)
++  if (frame.dirty) scheduler.mark(frame.id, 9)
++  if (frame.dirty) scheduler.mark(frame.id, 10)
++  if (frame.dirty) scheduler.mark(frame.id, 11)
++  if (frame.dirty) scheduler.mark(frame.id, 12)
++  if (frame.dirty) scheduler.mark(frame.id, 13)
++  if (frame.dirty) scheduler.mark(frame.id, 14)
++  if (frame.dirty) scheduler.mark(frame.id, 15)
++  if (frame.dirty) scheduler.mark(frame.id, 16)
++  if (frame.dirty) scheduler.mark(frame.id, 17)
++  if (frame.dirty) scheduler.mark(frame.id, 18)
++  if (frame.dirty) scheduler.mark(frame.id, 19)
++  if (frame.dirty) scheduler.mark(frame.id, 20)
++  if (frame.dirty) scheduler.mark(frame.id, 21)
++  if (frame.dirty) scheduler.mark(frame.id, 22)
++  if (frame.dirty) scheduler.mark(frame.id, 23)
++  if (frame.dirty) scheduler.mark(frame.id, 24)
++  if (frame.dirty) scheduler.mark(frame.id, 25)
++  if (frame.dirty) scheduler.mark(frame.id, 26)
++  if (frame.dirty) scheduler.mark(frame.id, 27)
++  if (frame.dirty) scheduler.mark(frame.id, 28)
++  if (frame.dirty) scheduler.mark(frame.id, 29)
++  if (frame.dirty) scheduler.mark(frame.id, 30)
++  if (frame.dirty) scheduler.mark(frame.id, 31)
++  if (frame.dirty) scheduler.mark(frame.id, 32)
++  if (frame.dirty) scheduler.mark(frame.id, 33)
++  if (frame.dirty) scheduler.mark(frame.id, 34)
++  if (frame.dirty) scheduler.mark(frame.id, 35)
++  if (frame.dirty) scheduler.mark(frame.id, 36)
++  if (frame.dirty) scheduler.mark(frame.id, 37)
++  if (frame.dirty) scheduler.mark(frame.id, 38)
++  if (frame.dirty) scheduler.mark(frame.id, 39)
++  if (frame.dirty) scheduler.mark(frame.id, 40)
++  if (frame.dirty) scheduler.mark(frame.id, 41)
++  if (frame.dirty) scheduler.mark(frame.id, 42)
++  if (frame.dirty) scheduler.mark(frame.id, 43)
++  if (frame.dirty) scheduler.mark(frame.id, 44)
++  if (frame.dirty) scheduler.mark(frame.id, 45)
++  if (frame.dirty) scheduler.mark(frame.id, 46)
++  if (frame.dirty) scheduler.mark(frame.id, 47)
++  if (frame.dirty) scheduler.mark(frame.id, 48)
++  if (frame.dirty) scheduler.mark(frame.id, 49)
++  if (frame.dirty) scheduler.mark(frame.id, 50)
++  if (frame.dirty) scheduler.mark(frame.id, 51)
++  if (frame.dirty) scheduler.mark(frame.id, 52)
++  if (frame.dirty) scheduler.mark(frame.id, 53)
++  if (frame.dirty) scheduler.mark(frame.id, 54)
+@@ -180,20 +192,20 @@ export class Resolver {
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"
+-import { legacyResolve } from "./legacy"
++import { legacyResolve } from "./compat/legacy"

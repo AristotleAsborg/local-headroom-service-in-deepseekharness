@@ -1,0 +1,4646 @@
+{
+  "suite": "compaction-protocol",
+  "version": 3,
+  "vectors": [
+    {
+      "id": "vec-000",
+      "description": "Vector 0 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix context compaction region window epoch surface repository conservative token sampling boundary region window",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget digest boundary payload boundary skeleton compaction object scalar subtree array threshold prefix deterministic",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat threshold projection region surface registry heartbeat budget identifier reversible surface conservative budget suffix",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "reversible surface scalar retention boundary backoff conservative context token subtree boundary object payload conservative",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context snapshot deterministic projection repository compaction snapshot retry reversible deterministic backoff session snapshot heartbeat",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 200
+      }
+    },
+    {
+      "id": "vec-001",
+      "description": "Vector 1 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention region estimator suffix checkpoint projection worker worker identifier sampling heartbeat estimator reversible object",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree fence registry surface session context scalar event transform conservative scheduler handler retention backoff",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary repository projection header session tail header payload surface surface structural reversible estimator identifier",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform conservative payload retry reversible context region backoff header retention object worker boundary threshold",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header repository marker subtree boundary estimator projection conservative nested session threshold snapshot retry nested",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 203
+      }
+    },
+    {
+      "id": "vec-002",
+      "description": "Vector 2 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler event payload skeleton payload repository event window tombstone sampling reversible boundary deterministic candidate",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker heuristic timeout array estimator compaction boundary sampling sampling handler checkpoint compaction structural window",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention epoch registry retention queue estimator boundary conservative session checkpoint skeleton conservative marker backoff",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot deterministic surface snapshot checkpoint queue candidate surface transform retry subtree window marker scheduler",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context snapshot header tombstone epoch session timeout snapshot fence array marker handler sampling timeout",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 206
+      }
+    },
+    {
+      "id": "vec-003",
+      "description": "Vector 3 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry backoff worker snapshot context candidate payload digest projection session payload reversible token queue",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region prefix deterministic heartbeat snapshot projection candidate compaction transform conservative checkpoint skeleton subtree session",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix snapshot queue fence candidate session session budget transform header fence handler budget threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "epoch event session repository sampling registry scheduler session nested session header worker budget boundary",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence scalar backoff threshold boundary fence repository projection scalar transform retry registry boundary payload",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 209
+      }
+    },
+    {
+      "id": "vec-004",
+      "description": "Vector 4 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface object identifier worker epoch timeout subtree deterministic boundary candidate digest projection budget queue",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "session heartbeat object retention threshold compaction scheduler budget queue projection threshold surface header checkpoint",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event epoch scalar scalar prefix scalar object nested retention retry registry skeleton scheduler threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker worker token repository candidate lease sampling identifier epoch tombstone suffix projection scalar tombstone",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary snapshot threshold prefix deterministic retention repository epoch transform checkpoint handler tail sampling surface",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 212
+      }
+    },
+    {
+      "id": "vec-005",
+      "description": "Vector 5 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction context reversible lease session tombstone repository suffix handler boundary scheduler queue handler threshold",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array backoff estimator surface epoch deterministic budget heartbeat context surface tail surface reversible fence",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event surface heuristic scalar tail marker identifier sampling event identifier deterministic subtree context conservative",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate budget repository backoff scalar handler prefix window fence skeleton event conservative estimator context",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix subtree identifier surface retry backoff boundary reversible region registry event epoch heartbeat checkpoint",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 215
+      }
+    },
+    {
+      "id": "vec-006",
+      "description": "Vector 6 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix queue array boundary timeout budget epoch surface reversible handler token repository token surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone scheduler identifier transform boundary fence epoch fence tombstone subtree threshold context candidate array",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention surface payload structural structural reversible handler token payload marker reversible event transform reversible",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout reversible queue registry context scheduler budget timeout heartbeat prefix suffix window region handler",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "lease fence fence region timeout projection fence fence budget event digest surface boundary registry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 218
+      }
+    },
+    {
+      "id": "vec-007",
+      "description": "Vector 7 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail array queue lease epoch conservative transform array compaction scheduler suffix window snapshot budget",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget marker digest scheduler backoff sampling boundary skeleton compaction repository retention retention transform reversible",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar worker epoch conservative heartbeat backoff projection surface identifier digest tombstone session estimator queue",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling structural estimator retry scheduler deterministic registry skeleton heartbeat surface object compaction fence boundary",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone deterministic surface compaction timeout sampling event context scalar worker repository queue projection heuristic",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 221
+      }
+    },
+    {
+      "id": "vec-008",
+      "description": "Vector 8 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window session region reversible epoch session context nested session tombstone skeleton snapshot retry context",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural threshold repository event digest fence event event boundary tail candidate retry surface queue",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload timeout tombstone session skeleton subtree candidate suffix repository payload header tail digest prefix",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree prefix fence tombstone payload tombstone worker skeleton marker snapshot scheduler context snapshot structural",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate queue subtree fence repository transform threshold retry heuristic marker compaction candidate candidate checkpoint",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 224
+      }
+    },
+    {
+      "id": "vec-009",
+      "description": "Vector 9 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat subtree budget handler window scheduler retention event lease marker marker context context object",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest projection epoch token nested heartbeat budget boundary subtree subtree timeout payload queue object",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold object object surface session token window lease tail surface heartbeat structural checkpoint lease",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "checkpoint payload scalar lease tail boundary payload checkpoint array surface threshold candidate surface payload",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker tail worker reversible header array transform repository conservative skeleton tombstone worker handler compaction",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 227
+      }
+    },
+    {
+      "id": "vec-010",
+      "description": "Vector 10 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object identifier compaction skeleton reversible skeleton registry timeout boundary sampling surface header tombstone queue",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker boundary nested array surface region backoff tail reversible nested queue candidate session fence",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "estimator transform registry registry tombstone context subtree surface sampling conservative skeleton worker nested budget",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat identifier region scalar boundary prefix scalar epoch object object payload threshold window queue",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction lease surface digest heuristic fence skeleton identifier backoff budget boundary marker reversible array",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 230
+      }
+    },
+    {
+      "id": "vec-011",
+      "description": "Vector 11 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "nested token timeout sampling subtree event surface subtree worker epoch token scheduler digest timeout",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload snapshot boundary tail tombstone payload array boundary reversible compaction surface transform payload event",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative marker handler sampling conservative boundary context nested worker tail candidate boundary worker worker",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction retention transform window tombstone boundary reversible transform context heartbeat structural timeout object heartbeat",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural array header lease transform sampling subtree registry identifier transform nested scalar suffix registry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 233
+      }
+    },
+    {
+      "id": "vec-012",
+      "description": "Vector 12 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository boundary fence session context surface fence event object projection suffix compaction prefix threshold",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence subtree retention registry backoff checkpoint registry retention estimator boundary sampling reversible surface subtree",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker window event scalar worker token projection boundary transform deterministic tail candidate projection worker",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix transform tail subtree tombstone boundary surface queue retry scheduler scalar queue backoff boundary",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling tail payload context subtree reversible suffix estimator deterministic timeout retry structural session tail",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 236
+      }
+    },
+    {
+      "id": "vec-013",
+      "description": "Vector 13 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object boundary boundary candidate surface threshold suffix surface payload backoff identifier backoff checkpoint region",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix identifier timeout sampling threshold sampling tombstone lease subtree token budget surface subtree deterministic",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface event subtree tail repository session candidate boundary surface surface header epoch context boundary",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry heartbeat estimator snapshot context budget structural object boundary transform event conservative lease compaction",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail tombstone timeout sampling scheduler session heuristic token object identifier header transform surface transform",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 239
+      }
+    },
+    {
+      "id": "vec-014",
+      "description": "Vector 14 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry window marker prefix epoch structural token registry transform fence threshold payload budget digest",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix tombstone timeout boundary estimator lease transform fence budget nested boundary compaction candidate tombstone",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload tombstone surface region event snapshot timeout reversible worker heuristic structural checkpoint tombstone retention",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler transform epoch timeout sampling snapshot prefix epoch deterministic transform event heartbeat sampling deterministic",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection handler compaction compaction context surface identifier skeleton conservative sampling estimator checkpoint marker structural",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 242
+      }
+    },
+    {
+      "id": "vec-015",
+      "description": "Vector 15 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail deterministic header array sampling boundary session tail nested context subtree object heartbeat surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative budget boundary event compaction snapshot backoff object conservative digest prefix tombstone projection epoch",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone structural reversible epoch repository digest snapshot worker session tombstone budget token window compaction",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary retry projection boundary compaction backoff region scheduler snapshot event budget snapshot heartbeat surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array budget candidate token token token digest marker structural fence payload epoch lease checkpoint",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 245
+      }
+    },
+    {
+      "id": "vec-016",
+      "description": "Vector 16 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry structural lease projection repository conservative backoff boundary retry digest boundary estimator event registry",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget compaction epoch registry heuristic epoch scalar marker timeout structural session header nested object",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff compaction repository snapshot window region estimator deterministic queue heuristic nested object deterministic registry",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker skeleton backoff heuristic suffix boundary compaction context heartbeat tombstone reversible session projection session",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler scheduler timeout tombstone retry conservative scalar tombstone timeout surface retention identifier digest boundary",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 248
+      }
+    },
+    {
+      "id": "vec-017",
+      "description": "Vector 17 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler timeout projection projection payload handler suffix identifier repository retention deterministic timeout boundary surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry retention repository subtree skeleton structural surface checkpoint array worker tombstone conservative sampling region",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix suffix region repository boundary window session snapshot epoch boundary backoff heartbeat surface structural",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix surface marker header tombstone heuristic worker scheduler token object epoch queue subtree threshold",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier suffix repository checkpoint timeout skeleton scalar object budget queue token subtree registry retention",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 251
+      }
+    },
+    {
+      "id": "vec-018",
+      "description": "Vector 18 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform lease event header prefix checkpoint repository conservative array digest context scheduler transform worker",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence event payload fence marker tail sampling heuristic compaction structural scheduler retry retention backoff",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface conservative compaction structural fence subtree deterministic heuristic identifier prefix scheduler structural surface structural",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heuristic queue estimator payload worker retention tombstone header threshold handler suffix epoch context surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar sampling projection worker threshold retry checkpoint digest snapshot boundary heuristic budget header repository",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 254
+      }
+    },
+    {
+      "id": "vec-019",
+      "description": "Vector 19 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier surface subtree event structural tail deterministic candidate heartbeat retention epoch queue transform epoch",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event region boundary scalar checkpoint transform budget object heuristic context scalar scalar boundary subtree",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token nested fence event scheduler retention session skeleton fence deterministic scalar sampling threshold threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree lease candidate surface surface deterministic fence marker region backoff projection suffix snapshot fence",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar header conservative prefix heartbeat payload projection snapshot projection sampling snapshot suffix surface payload",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 257
+      }
+    },
+    {
+      "id": "vec-020",
+      "description": "Vector 20 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload tombstone estimator conservative subtree scalar compaction region lease suffix compaction prefix projection threshold",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling projection tail heuristic tombstone backoff compaction marker candidate subtree deterministic token fence header",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection region tail token boundary lease budget deterministic payload token surface backoff scalar scheduler",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "session compaction reversible surface registry budget queue lease scalar budget snapshot estimator registry prefix",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region backoff retention scheduler heartbeat subtree estimator threshold registry suffix nested sampling budget transform",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 260
+      }
+    },
+    {
+      "id": "vec-021",
+      "description": "Vector 21 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate boundary registry identifier handler suffix identifier estimator retention header object scalar region epoch",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence surface marker candidate transform scheduler scalar prefix conservative heartbeat handler budget budget threshold",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "session object handler region array registry structural boundary sampling tail boundary repository deterministic array",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token timeout subtree transform header heuristic heuristic retention token suffix sampling tail tombstone context",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform payload identifier snapshot digest context compaction repository timeout skeleton scheduler boundary compaction deterministic",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 263
+      }
+    },
+    {
+      "id": "vec-022",
+      "description": "Vector 22 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry budget lease conservative snapshot prefix boundary deterministic tail retention boundary reversible reversible nested",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone timeout prefix token context identifier registry scalar tombstone handler registry heuristic lease digest",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention boundary conservative threshold registry backoff event object threshold compaction identifier scheduler region heuristic",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository epoch retry checkpoint suffix fence context retry region budget scalar marker deterministic tombstone",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload scalar marker threshold deterministic boundary budget timeout identifier nested event estimator candidate context",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 266
+      }
+    },
+    {
+      "id": "vec-023",
+      "description": "Vector 23 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix nested digest worker handler reversible context queue tombstone nested threshold timeout queue subtree",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform transform region queue candidate lease projection retry conservative projection lease estimator backoff projection",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree epoch backoff threshold compaction reversible tombstone array retention array digest array snapshot surface",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry nested repository estimator repository deterministic array object heuristic prefix conservative budget tombstone marker",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix token heuristic compaction reversible threshold digest digest digest tail tail tombstone token retry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 269
+      }
+    },
+    {
+      "id": "vec-024",
+      "description": "Vector 24 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event threshold threshold object subtree identifier fence heuristic lease subtree nested timeout deterministic surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary array prefix checkpoint repository heartbeat retention candidate estimator skeleton projection subtree handler identifier",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention reversible tombstone estimator session session nested compaction heartbeat registry budget digest session window",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget surface header epoch queue checkpoint event compaction prefix tail array retention budget worker",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header region skeleton digest backoff digest tombstone reversible prefix projection queue estimator nested snapshot",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 272
+      }
+    },
+    {
+      "id": "vec-025",
+      "description": "Vector 25 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot array epoch structural session backoff projection identifier compaction context estimator event fence projection",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler registry heartbeat digest suffix registry conservative fence backoff structural budget backoff snapshot repository",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context structural structural scalar handler budget retry scheduler fence threshold threshold checkpoint surface threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "reversible surface payload surface deterministic header scheduler backoff scalar tombstone scheduler digest suffix tombstone",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection checkpoint fence projection candidate projection event heartbeat checkpoint skeleton object token prefix skeleton",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 275
+      }
+    },
+    {
+      "id": "vec-026",
+      "description": "Vector 26 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate marker fence sampling surface surface context object registry array budget scalar identifier digest",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest array array marker surface structural heartbeat budget transform snapshot skeleton budget context lease",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary suffix boundary threshold reversible budget array marker boundary threshold identifier heartbeat checkpoint projection",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region compaction digest suffix nested region retention scalar timeout transform marker reversible reversible sampling",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region threshold conservative estimator boundary subtree nested subtree projection retry fence surface digest event",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 278
+      }
+    },
+    {
+      "id": "vec-027",
+      "description": "Vector 27 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural threshold nested session candidate marker session nested timeout retry lease surface projection registry",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative handler session fence tail digest payload repository tombstone sampling retry handler compaction suffix",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker repository estimator lease backoff surface surface window budget queue scheduler reversible tombstone transform",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold conservative worker fence epoch object scalar compaction payload identifier checkpoint boundary reversible snapshot",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction array lease timeout boundary tail subtree timeout prefix projection token worker snapshot retention",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 281
+      }
+    },
+    {
+      "id": "vec-028",
+      "description": "Vector 28 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff retention conservative fence projection token projection snapshot tail payload checkpoint threshold context boundary",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix object structural epoch boundary retention conservative lease surface backoff skeleton scalar structural payload",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree window handler epoch surface sampling projection estimator transform deterministic projection budget timeout scalar",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "nested digest subtree budget token subtree object marker identifier scalar structural identifier checkpoint projection",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token estimator lease heartbeat subtree worker worker tombstone suffix payload tombstone nested worker object",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 284
+      }
+    },
+    {
+      "id": "vec-029",
+      "description": "Vector 29 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository heartbeat conservative registry backoff retry surface scheduler scalar handler identifier projection marker retention",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton skeleton marker sampling payload suffix digest marker nested structural heartbeat context sampling structural",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array surface prefix nested transform boundary token prefix event heuristic object registry budget budget",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot array boundary estimator conservative scheduler array deterministic tombstone registry backoff conservative tail surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction retention handler surface compaction projection checkpoint structural snapshot timeout subtree handler timeout retry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 287
+      }
+    },
+    {
+      "id": "vec-030",
+      "description": "Vector 30 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header budget suffix deterministic deterministic region token retry snapshot threshold deterministic retry context boundary",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler queue estimator handler identifier scalar estimator surface conservative tail boundary fence array estimator",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token sampling sampling retry timeout scheduler event fence repository session timeout worker boundary payload",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload boundary structural repository surface nested fence transform region backoff timeout subtree object candidate",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload digest timeout budget backoff prefix handler lease projection snapshot nested region structural epoch",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 290
+      }
+    },
+    {
+      "id": "vec-031",
+      "description": "Vector 31 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler reversible digest transform backoff token reversible skeleton window estimator backoff payload transform backoff",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat scalar nested marker tombstone queue repository deterministic boundary heartbeat payload window snapshot registry",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token heartbeat backoff queue tail snapshot compaction skeleton prefix estimator threshold identifier structural retention",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "checkpoint tombstone suffix subtree budget deterministic projection header subtree transform surface worker structural handler",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural retention compaction projection structural digest boundary subtree conservative timeout structural checkpoint boundary region",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 293
+      }
+    },
+    {
+      "id": "vec-032",
+      "description": "Vector 32 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix retention handler header timeout session tombstone candidate skeleton lease scalar queue context transform",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative sampling boundary identifier header surface marker sampling retention object event boundary tombstone identifier",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix snapshot heartbeat context suffix event candidate context heartbeat threshold checkpoint token boundary payload",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail token repository repository digest estimator surface backoff retention window timeout object digest backoff",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar conservative surface registry structural transform registry epoch retry queue checkpoint reversible heartbeat surface",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 296
+      }
+    },
+    {
+      "id": "vec-033",
+      "description": "Vector 33 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget queue conservative tail repository fence tail boundary context nested budget threshold heartbeat boundary",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker repository skeleton header transform lease scalar tail sampling region prefix tail window deterministic",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone retry compaction sampling digest scalar token compaction structural transform budget heartbeat heartbeat handler",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object window threshold event tombstone array window timeout fence event conservative handler marker boundary",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary projection projection scheduler worker deterministic checkpoint retry prefix header fence registry identifier structural",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 299
+      }
+    },
+    {
+      "id": "vec-034",
+      "description": "Vector 34 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat heuristic identifier reversible compaction sampling array projection tail boundary threshold estimator scalar structural",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate subtree subtree structural epoch sampling compaction backoff retention scalar array payload deterministic surface",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention lease session session deterministic registry registry compaction header object session marker context session",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform scalar event header payload digest budget boundary worker fence queue snapshot region backoff",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone event boundary region boundary checkpoint surface snapshot prefix tombstone threshold estimator heuristic retention",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 302
+      }
+    },
+    {
+      "id": "vec-035",
+      "description": "Vector 35 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar heuristic tombstone context boundary skeleton candidate queue structural transform heartbeat session threshold session",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar projection threshold digest identifier event digest context projection worker scheduler window token payload",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event projection budget reversible heartbeat tombstone structural retention budget scalar handler region conservative threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object header snapshot tombstone retry marker identifier window threshold subtree session registry boundary transform",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat snapshot sampling queue nested suffix projection deterministic transform repository boundary tail fence backoff",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 305
+      }
+    },
+    {
+      "id": "vec-036",
+      "description": "Vector 36 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction conservative surface array scalar projection region sampling scheduler backoff transform marker timeout estimator",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural structural estimator tombstone reversible array context window heuristic registry sampling fence compaction fence",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "epoch heartbeat sampling deterministic reversible queue queue epoch worker retention transform scheduler backoff marker",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler token tail surface skeleton token backoff tail handler header budget payload transform epoch",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence retention budget tail token token backoff prefix surface retry candidate object retention transform",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 308
+      }
+    },
+    {
+      "id": "vec-037",
+      "description": "Vector 37 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "reversible window tail epoch boundary tombstone session subtree event retention heuristic handler surface event",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "reversible identifier array backoff scalar tombstone header threshold candidate heuristic estimator suffix compaction suffix",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff marker backoff conservative compaction header session array surface suffix array sampling projection skeleton",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot retry payload marker sampling surface tombstone header checkpoint boundary marker epoch registry backoff",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget boundary structural digest transform skeleton array heartbeat candidate epoch skeleton object subtree boundary",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 311
+      }
+    },
+    {
+      "id": "vec-038",
+      "description": "Vector 38 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff surface session heuristic event registry prefix transform compaction estimator estimator session boundary identifier",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary window projection region conservative estimator timeout epoch queue deterministic sampling reversible digest array",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence digest object heartbeat skeleton fence scalar identifier handler scheduler reversible conservative repository prefix",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix skeleton structural worker boundary projection threshold heuristic checkpoint suffix sampling queue marker candidate",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate structural projection scheduler object payload compaction reversible session backoff handler tombstone header marker",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 314
+      }
+    },
+    {
+      "id": "vec-039",
+      "description": "Vector 39 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton object identifier heuristic suffix compaction tombstone sampling fence skeleton deterministic array event boundary",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heuristic conservative retry boundary boundary boundary handler token snapshot heuristic fence session reversible fence",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload queue backoff skeleton surface skeleton reversible budget boundary surface checkpoint snapshot subtree scheduler",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold fence retry conservative backoff queue window reversible header region region budget threshold subtree",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event region fence fence repository snapshot structural tombstone conservative heuristic transform snapshot budget registry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 317
+      }
+    },
+    {
+      "id": "vec-040",
+      "description": "Vector 40 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff checkpoint nested boundary structural session backoff conservative nested projection scalar session fence deterministic",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural epoch conservative identifier budget budget suffix token estimator reversible lease candidate heartbeat repository",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff lease window event suffix repository tombstone event skeleton skeleton header session marker registry",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix handler tombstone estimator marker surface scalar array projection candidate worker object worker surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative suffix candidate retry snapshot deterministic checkpoint surface backoff array conservative checkpoint scalar payload",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 320
+      }
+    },
+    {
+      "id": "vec-041",
+      "description": "Vector 41 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone surface tail fence sampling window epoch array session compaction window event timeout lease",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree window marker candidate repository window digest transform boundary conservative array tail backoff lease",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot subtree tombstone handler token timeout candidate reversible retention transform projection candidate timeout snapshot",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff boundary tombstone lease digest retention lease heuristic window registry timeout repository deterministic reversible",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural digest event tombstone transform budget worker digest threshold fence tombstone deterministic suffix budget",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 323
+      }
+    },
+    {
+      "id": "vec-042",
+      "description": "Vector 42 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler fence identifier prefix scalar subtree worker suffix conservative epoch identifier timeout skeleton conservative",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier tombstone checkpoint marker retention heartbeat surface estimator skeleton estimator deterministic sampling identifier skeleton",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural nested sampling prefix skeleton event region candidate threshold budget fence surface fence window",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold reversible budget region heuristic heuristic backoff marker structural compaction tombstone estimator structural token",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface threshold marker transform tombstone snapshot surface array context skeleton session token digest scalar",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 326
+      }
+    },
+    {
+      "id": "vec-043",
+      "description": "Vector 43 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface array tombstone transform reversible sampling registry handler scheduler deterministic registry boundary scheduler retention",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry skeleton sampling surface retry registry reversible epoch sampling region session projection backoff identifier",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event suffix registry backoff context prefix registry retention identifier skeleton token context handler queue",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget handler retention tail transform marker timeout array boundary surface boundary structural object epoch",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface sampling scalar sampling region reversible retry handler skeleton array conservative surface transform scheduler",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 329
+      }
+    },
+    {
+      "id": "vec-044",
+      "description": "Vector 44 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat snapshot deterministic session timeout header nested budget retention registry timeout surface prefix sampling",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail heuristic boundary scalar surface array tombstone timeout nested identifier threshold checkpoint token compaction",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest structural sampling window region budget timeout checkpoint region boundary registry reversible context threshold",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout window candidate boundary boundary payload registry projection worker tail compaction skeleton repository surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler retry epoch prefix transform fence marker deterministic nested snapshot sampling array conservative suffix",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 332
+      }
+    },
+    {
+      "id": "vec-045",
+      "description": "Vector 45 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction sampling scheduler nested retry object reversible budget subtree payload boundary array fence context",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection nested candidate identifier budget digest transform heartbeat tombstone fence skeleton region timeout tail",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload header conservative sampling marker worker window queue array nested prefix sampling backoff heuristic",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling worker token registry skeleton suffix checkpoint registry registry surface handler array tombstone checkpoint",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate digest region tail window fence event object identifier scalar window backoff projection timeout",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 335
+      }
+    },
+    {
+      "id": "vec-046",
+      "description": "Vector 46 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold epoch scalar structural retention context digest backoff transform object checkpoint skeleton fence candidate",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface header boundary boundary nested sampling deterministic retry region backoff budget marker boundary deterministic",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary candidate heartbeat retention surface boundary reversible tombstone boundary tombstone object object prefix deterministic",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region boundary region snapshot region checkpoint backoff event tail token checkpoint identifier surface compaction",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface scheduler repository suffix queue payload region suffix object snapshot region digest lease marker",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 338
+      }
+    },
+    {
+      "id": "vec-047",
+      "description": "Vector 47 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window surface surface marker compaction transform context epoch array worker conservative candidate transform scheduler",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header structural budget retention surface region surface boundary threshold header compaction checkpoint object deterministic",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat transform event candidate structural payload budget boundary header marker scheduler heuristic transform surface",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload object payload tombstone identifier threshold backoff retention boundary digest suffix scalar worker heuristic",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary tombstone digest retry estimator surface candidate boundary lease surface payload handler event compaction",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 341
+      }
+    },
+    {
+      "id": "vec-048",
+      "description": "Vector 48 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence marker repository transform window backoff transform context epoch worker prefix lease compaction timeout",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker boundary retry tombstone payload retention snapshot retry surface epoch retention worker nested handler",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection queue deterministic scheduler registry worker worker fence context sampling object budget candidate event",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "estimator window surface candidate header snapshot conservative payload candidate registry heuristic conservative surface token",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest token token subtree subtree queue projection identifier skeleton region threshold candidate threshold boundary",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 344
+      }
+    },
+    {
+      "id": "vec-049",
+      "description": "Vector 49 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "deterministic event payload retry nested session reversible payload conservative region timeout surface threshold context",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload array deterministic candidate event boundary session scalar subtree region region identifier payload boundary",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget context threshold marker identifier session epoch digest threshold scalar reversible header tombstone heuristic",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot heartbeat digest digest snapshot retry region subtree payload registry prefix region identifier token",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative worker event identifier tail worker fence epoch compaction structural identifier tombstone suffix token",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 347
+      }
+    },
+    {
+      "id": "vec-050",
+      "description": "Vector 50 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker retention backoff heuristic header compaction suffix snapshot heuristic window deterministic retry checkpoint scheduler",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary transform marker nested tail scheduler region identifier event token surface context repository payload",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate boundary lease heartbeat snapshot repository window conservative skeleton handler timeout projection object header",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction array surface identifier token conservative payload region scheduler window boundary fence boundary reversible",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold sampling scalar object boundary skeleton timeout worker checkpoint context fence budget event transform",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 350
+      }
+    },
+    {
+      "id": "vec-051",
+      "description": "Vector 51 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry structural marker compaction heartbeat token heartbeat timeout conservative window deterministic transform boundary tail",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry compaction queue transform deterministic epoch heuristic lease budget fence nested queue retention surface",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier retention digest header epoch suffix conservative heuristic reversible snapshot handler sampling tombstone scheduler",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token boundary threshold timeout reversible estimator token budget retry object retry marker transform scalar",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry window deterministic threshold threshold threshold tail candidate suffix header checkpoint epoch object snapshot",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 353
+      }
+    },
+    {
+      "id": "vec-052",
+      "description": "Vector 52 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token budget backoff queue window digest retry projection threshold surface checkpoint region nested handler",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heuristic queue tail subtree boundary conservative fence retention boundary threshold array header threshold structural",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context event marker marker token subtree skeleton estimator threshold digest worker reversible lease retention",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository object worker worker registry worker retry snapshot structural surface window surface scalar registry",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface window event scheduler context compaction retention header subtree checkpoint lease snapshot candidate header",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 356
+      }
+    },
+    {
+      "id": "vec-053",
+      "description": "Vector 53 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate projection estimator boundary region transform tail sampling backoff marker marker tail digest conservative",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative marker window structural registry budget identifier tombstone prefix budget epoch nested sampling event",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload region structural scalar transform subtree deterministic header heartbeat tail context fence prefix array",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest digest epoch header registry heuristic transform conservative suffix transform estimator compaction deterministic transform",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection payload session subtree handler array snapshot retention surface retention object subtree projection header",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 359
+      }
+    },
+    {
+      "id": "vec-054",
+      "description": "Vector 54 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix backoff scalar scalar retention conservative context fence conservative boundary compaction registry subtree retry",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone compaction worker heartbeat context conservative projection lease skeleton backoff lease conservative identifier scheduler",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker marker nested skeleton scheduler marker heuristic session object boundary checkpoint projection worker compaction",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array handler handler retry header skeleton session snapshot lease marker snapshot skeleton header transform",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton marker digest region digest budget tombstone marker transform compaction event threshold header digest",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 362
+      }
+    },
+    {
+      "id": "vec-055",
+      "description": "Vector 55 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform window header subtree epoch window heuristic timeout surface marker payload heuristic token threshold",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry fence session object heuristic surface structural region identifier nested window budget estimator tail",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection nested registry boundary epoch deterministic structural object boundary epoch snapshot subtree context lease",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header conservative retry budget fence nested sampling session heuristic heuristic retry context deterministic surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier fence registry surface structural timeout checkpoint session prefix timeout event payload boundary epoch",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 365
+      }
+    },
+    {
+      "id": "vec-056",
+      "description": "Vector 56 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "estimator prefix scalar timeout object transform compaction worker registry context skeleton subtree registry scalar",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window skeleton skeleton candidate tombstone candidate handler sampling region retention candidate estimator snapshot backoff",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence identifier sampling object subtree checkpoint session token registry header compaction token tombstone subtree",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "checkpoint subtree window heartbeat subtree token estimator registry handler compaction budget object header structural",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context session structural nested suffix repository header scheduler region subtree estimator surface array heartbeat",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 368
+      }
+    },
+    {
+      "id": "vec-057",
+      "description": "Vector 57 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window scalar digest array structural budget event compaction session payload session nested repository nested",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface projection tombstone tail scalar estimator scheduler queue worker fence compaction retry fence suffix",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker surface boundary context session epoch retry window worker retention region timeout suffix scalar",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "estimator transform projection region object snapshot payload structural retention projection event backoff context object",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection timeout array repository retention sampling reversible snapshot boundary payload retention prefix heartbeat event",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 371
+      }
+    },
+    {
+      "id": "vec-058",
+      "description": "Vector 58 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling lease structural tombstone repository scalar structural heuristic snapshot conservative deterministic estimator budget reversible",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout window repository array repository retry array event reversible heartbeat checkpoint reversible header projection",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface compaction tail header identifier snapshot snapshot conservative boundary transform skeleton payload fence scalar",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object nested deterministic retry tombstone prefix backoff suffix skeleton retry estimator digest tombstone budget",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "region object candidate registry budget digest tail lease candidate heuristic epoch nested boundary snapshot",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 374
+      }
+    },
+    {
+      "id": "vec-059",
+      "description": "Vector 59 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "nested backoff checkpoint lease tombstone queue header suffix object heartbeat context identifier lease boundary",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler registry prefix token scalar context compaction payload array event token structural timeout checkpoint",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence identifier token nested surface window marker threshold boundary structural sampling token context marker",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix structural boundary projection repository retry tail subtree epoch lease checkpoint heuristic identifier surface",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree backoff surface fence prefix registry region token transform reversible threshold object heuristic subtree",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 377
+      }
+    },
+    {
+      "id": "vec-060",
+      "description": "Vector 60 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat scalar region queue scalar scalar region retention session epoch heartbeat region candidate marker",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention queue token identifier prefix retry marker checkpoint window compaction structural sampling heuristic tombstone",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary threshold backoff fence queue payload session prefix lease backoff token boundary nested boundary",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone epoch checkpoint handler digest epoch backoff timeout payload token payload repository transform projection",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton retention lease tombstone skeleton boundary header threshold backoff reversible surface timeout fence marker",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 380
+      }
+    },
+    {
+      "id": "vec-061",
+      "description": "Vector 61 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout tail header session heuristic surface surface scheduler scheduler worker skeleton window lease nested",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window boundary context skeleton header retry queue snapshot checkpoint backoff suffix scheduler surface worker",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone tail region queue lease tombstone region lease retention prefix retention conservative repository array",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker reversible prefix event epoch estimator boundary subtree object session repository digest header boundary",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot snapshot subtree queue retention conservative array backoff digest candidate tail epoch surface digest",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 383
+      }
+    },
+    {
+      "id": "vec-062",
+      "description": "Vector 62 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry header sampling compaction identifier candidate registry projection identifier fence heuristic prefix compaction registry",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence candidate array tail fence token registry deterministic identifier event digest backoff nested reversible",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail tail skeleton object event scheduler surface scalar array handler digest surface subtree structural",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "candidate event queue identifier boundary transform context epoch repository deterministic estimator reversible heartbeat subtree",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail payload header heuristic window surface estimator header snapshot queue worker projection surface worker",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 386
+      }
+    },
+    {
+      "id": "vec-063",
+      "description": "Vector 63 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton candidate identifier retry heartbeat deterministic estimator checkpoint checkpoint reversible session heuristic event worker",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural timeout handler repository timeout boundary queue heartbeat region token backoff event registry retention",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling identifier deterministic tombstone header session sampling boundary scalar marker payload header region deterministic",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler reversible registry array structural digest marker header skeleton surface backoff context heuristic token",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection prefix scalar event skeleton registry event structural prefix header estimator lease candidate surface",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 389
+      }
+    },
+    {
+      "id": "vec-064",
+      "description": "Vector 64 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "structural fence marker object boundary tail scalar structural object estimator registry handler structural timeout",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction object deterministic tail suffix context conservative boundary nested timeout digest tail header array",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "identifier structural digest checkpoint nested window token fence scalar registry heuristic worker budget checkpoint",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff compaction boundary registry transform array session subtree subtree boundary backoff identifier budget conservative",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "window skeleton boundary candidate worker estimator boundary repository marker boundary surface identifier structural backoff",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 392
+      }
+    },
+    {
+      "id": "vec-065",
+      "description": "Vector 65 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "compaction structural transform object object surface worker header projection backoff tail deterministic handler queue",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton subtree sampling suffix compaction registry conservative token marker scheduler heuristic heuristic array transform",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface checkpoint retry worker token event structural structural compaction region worker reversible fence retention",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "lease estimator snapshot checkpoint retry lease prefix nested subtree compaction payload scheduler transform scheduler",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token compaction backoff suffix scheduler digest nested compaction header tail surface token header heartbeat",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 395
+      }
+    },
+    {
+      "id": "vec-066",
+      "description": "Vector 66 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "session budget registry region event token structural structural transform epoch worker surface scalar prefix",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "registry checkpoint timeout tail lease transform retention nested boundary digest payload nested tail marker",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "payload conservative lease conservative window projection checkpoint object projection registry region tombstone projection payload",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "lease suffix session budget payload scheduler conservative tombstone scheduler snapshot event reversible sampling backoff",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scalar repository deterministic marker retention lease window structural threshold prefix handler payload structural heuristic",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 398
+      }
+    },
+    {
+      "id": "vec-067",
+      "description": "Vector 67 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heuristic session checkpoint payload context estimator retry fence registry sampling conservative region epoch token",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling backoff header handler repository sampling lease region checkpoint tombstone conservative heartbeat heuristic region",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "scheduler sampling lease scalar skeleton reversible reversible scheduler surface region prefix checkpoint tail sampling",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "lease suffix handler estimator identifier conservative skeleton heuristic context marker retry window scalar registry",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget heartbeat context scheduler lease marker structural backoff epoch region heuristic prefix projection scalar",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 401
+      }
+    },
+    {
+      "id": "vec-068",
+      "description": "Vector 68 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "lease context snapshot lease queue snapshot subtree projection sampling event checkpoint worker suffix array",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "suffix handler array tail lease nested session heuristic subtree sampling surface payload retention suffix",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header timeout payload compaction tombstone lease boundary boundary reversible projection boundary identifier surface queue",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection retry checkpoint scheduler snapshot surface repository checkpoint fence lease repository session budget nested",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "session window array queue checkpoint object boundary prefix tail transform repository projection array session",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 404
+      }
+    },
+    {
+      "id": "vec-069",
+      "description": "Vector 69 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object conservative repository fence compaction nested heuristic surface snapshot identifier payload queue header lease",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat window object threshold boundary scalar boundary surface surface sampling retry structural compaction snapshot",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection identifier nested retry backoff threshold tail worker lease suffix token event prefix heartbeat",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget fence context window payload deterministic event heartbeat event suffix surface header repository object",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "skeleton structural surface digest epoch scheduler nested retention heuristic array identifier skeleton handler retention",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 407
+      }
+    },
+    {
+      "id": "vec-070",
+      "description": "Vector 70 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout lease sampling tail conservative object suffix deterministic marker heuristic epoch candidate prefix surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "object context scalar conservative nested candidate lease fence event array retry identifier queue surface",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "queue threshold handler backoff conservative handler scheduler tail boundary window header context surface payload",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "worker registry estimator skeleton context token event session threshold marker queue threshold reversible retention",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context tombstone surface window digest boundary estimator budget handler prefix deterministic surface boundary scalar",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 410
+      }
+    },
+    {
+      "id": "vec-071",
+      "description": "Vector 71 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest surface digest event registry event transform boundary prefix repository skeleton surface region object",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository sampling object retention surface context skeleton suffix sampling token tail digest surface surface",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry digest fence boundary scalar scalar retention heartbeat payload retention queue deterministic marker array",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "budget marker boundary tail worker fence surface boundary skeleton queue handler repository tail identifier",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tail registry structural transform worker boundary reversible heartbeat queue context boundary boundary scheduler estimator",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 413
+      }
+    },
+    {
+      "id": "vec-072",
+      "description": "Vector 72 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array timeout prefix marker heartbeat nested snapshot worker scheduler candidate heartbeat snapshot backoff surface",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "surface payload budget region object boundary heartbeat queue estimator scheduler nested structural deterministic backoff",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "nested nested object fence surface context budget worker skeleton projection worker scheduler budget handler",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "nested heuristic retention tail heuristic registry heartbeat compaction prefix candidate object identifier skeleton worker",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest compaction scheduler scalar heuristic tombstone candidate tombstone nested structural estimator retention heartbeat snapshot",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 416
+      }
+    },
+    {
+      "id": "vec-073",
+      "description": "Vector 73 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence identifier skeleton surface retry window repository conservative tombstone epoch timeout nested marker subtree",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "snapshot skeleton registry digest transform handler estimator lease skeleton payload lease boundary sampling tombstone",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "sampling lease header retry subtree boundary suffix surface suffix boundary event subtree structural lease",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header subtree estimator scheduler nested conservative object boundary scheduler tail estimator tail lease candidate",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "conservative digest timeout tail token scalar epoch surface heartbeat deterministic fence session tombstone retry",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 419
+      }
+    },
+    {
+      "id": "vec-074",
+      "description": "Vector 74 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker candidate window deterministic projection epoch threshold scalar handler queue estimator heartbeat scalar skeleton",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "subtree handler header boundary conservative reversible heuristic registry prefix epoch handler context lease budget",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "digest projection context retry epoch snapshot reversible surface queue header compaction handler window subtree",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "projection snapshot scalar identifier conservative array tombstone surface compaction boundary reversible timeout epoch subtree",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold identifier epoch transform marker queue queue conservative retry reversible header timeout retention timeout",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 422
+      }
+    },
+    {
+      "id": "vec-075",
+      "description": "Vector 75 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "fence structural timeout backoff retention queue identifier identifier boundary transform header surface fence repository",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retry boundary repository skeleton scalar worker lease deterministic transform timeout session projection heuristic identifier",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "marker checkpoint subtree skeleton checkpoint tombstone projection nested sampling transform skeleton budget boundary heartbeat",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "threshold transform object repository tombstone fence payload estimator threshold scheduler epoch boundary compaction deterministic",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary tombstone window threshold worker timeout repository reversible region event snapshot identifier prefix estimator",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": false,
+        "reason": "tool-pairing-unbalanced",
+        "resultingTokens": 425
+      }
+    },
+    {
+      "id": "vec-076",
+      "description": "Vector 76 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "header compaction transform repository session heuristic boundary retry marker budget prefix candidate event timeout",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "event timeout checkpoint timeout context handler heuristic sampling event scalar session scalar boundary region",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "transform context worker sampling budget subtree registry worker queue prefix event event structural conservative",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "token candidate window subtree transform candidate context skeleton registry region transform nested boundary projection",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "boundary lease structural budget prefix region queue estimator boundary tail session checkpoint marker scheduler",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 428
+      }
+    },
+    {
+      "id": "vec-077",
+      "description": "Vector 77 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "reversible queue subtree repository surface region timeout checkpoint registry tail object prefix scalar heartbeat",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "queue repository structural subtree epoch context object heartbeat tombstone token lease boundary scalar marker",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "epoch lease surface deterministic payload fence backoff boundary surface sampling tombstone retry sampling checkpoint",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "context event timeout subtree backoff threshold identifier transform projection epoch lease header worker heartbeat",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix epoch reversible suffix subtree timeout surface candidate queue conservative estimator registry retention sampling",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 431
+      }
+    },
+    {
+      "id": "vec-078",
+      "description": "Vector 78 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "backoff handler payload handler session worker repository sampling timeout conservative nested lease object window",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "repository surface session scheduler digest worker heuristic candidate scalar session nested compaction context scalar",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "handler budget registry timeout snapshot window scheduler retention deterministic surface lease sampling event projection",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "timeout estimator surface region digest candidate tail worker scalar deterministic estimator timeout digest object",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "array surface boundary budget candidate budget retry window registry payload identifier queue epoch nested",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 434
+      }
+    },
+    {
+      "id": "vec-079",
+      "description": "Vector 79 asserts that a surface cut at an unanswered tool call is rejected.",
+      "input": {
+        "events": [
+          {
+            "seq": 1,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "heartbeat prefix heartbeat queue reversible budget subtree registry candidate tail header worker backoff handler",
+              "tokens": 40
+            }
+          },
+          {
+            "seq": 2,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "tombstone array handler retry deterministic tombstone transform subtree registry conservative projection digest prefix checkpoint",
+              "tokens": 47
+            }
+          },
+          {
+            "seq": 3,
+            "type": "tool/result",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "estimator object structural threshold token boundary prefix surface identifier candidate array repository identifier boundary",
+              "tokens": 54
+            }
+          },
+          {
+            "seq": 4,
+            "type": "user/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "retention scalar budget surface context worker surface sampling budget session event object queue scheduler",
+              "tokens": 61
+            }
+          },
+          {
+            "seq": 5,
+            "type": "assistant/message",
+            "surfaceOp": "append",
+            "payload": {
+              "text": "prefix event timeout subtree context header snapshot surface tombstone scalar boundary epoch fence skeleton",
+              "tokens": 68
+            }
+          }
+        ]
+      },
+      "expect": {
+        "accepted": true,
+        "reason": "ok",
+        "resultingTokens": 437
+      }
+    }
+  ]
+}

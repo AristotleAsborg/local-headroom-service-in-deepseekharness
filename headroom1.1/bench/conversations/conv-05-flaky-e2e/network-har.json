@@ -1,0 +1,3091 @@
+{
+  "capturedAt": "2026-03-14T09:41:02.118Z",
+  "entries": [
+    {
+      "startedDateTime": "2026-03-14T09:40:00.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=0",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_24ce0eafa1b3"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 512,
+        "timeMs": 20
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 0
+      },
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 1,
+        "wait": 10,
+        "receive": 2
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:01.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=1",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_cbc536cf68e2"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 549,
+        "timeMs": 21
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 3
+      },
+      "timing": {
+        "dns": 1,
+        "connect": 1,
+        "ssl": 1,
+        "send": 1,
+        "wait": 11,
+        "receive": 3
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:02.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=2",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_989dcc46b5df"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 586,
+        "timeMs": 22
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 6
+      },
+      "timing": {
+        "dns": 2,
+        "connect": 2,
+        "ssl": 2,
+        "send": 1,
+        "wait": 12,
+        "receive": 4
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:03.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=3",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_c4be6a57cb0e"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 623,
+        "timeMs": 23
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 9
+      },
+      "timing": {
+        "dns": 3,
+        "connect": 3,
+        "ssl": 3,
+        "send": 1,
+        "wait": 13,
+        "receive": 5
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:04.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=4",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_1bb958b61f17"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 660,
+        "timeMs": 24
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 12
+      },
+      "timing": {
+        "dns": 4,
+        "connect": 4,
+        "ssl": 4,
+        "send": 1,
+        "wait": 14,
+        "receive": 6
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:05.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=5",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_61ff1c6977bc"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 697,
+        "timeMs": 25
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 15
+      },
+      "timing": {
+        "dns": 5,
+        "connect": 5,
+        "ssl": 5,
+        "send": 1,
+        "wait": 15,
+        "receive": 7
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:06.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=6",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_b372799f1d15"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 734,
+        "timeMs": 26
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 18
+      },
+      "timing": {
+        "dns": 6,
+        "connect": 6,
+        "ssl": 6,
+        "send": 1,
+        "wait": 16,
+        "receive": 8
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:07.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=7",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_c66aaae55ec1"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 771,
+        "timeMs": 27
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 21
+      },
+      "timing": {
+        "dns": 7,
+        "connect": 7,
+        "ssl": 7,
+        "send": 1,
+        "wait": 17,
+        "receive": 9
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:08.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=8",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_81ca9a37d0ab"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 808,
+        "timeMs": 28
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 24
+      },
+      "timing": {
+        "dns": 8,
+        "connect": 8,
+        "ssl": 8,
+        "send": 1,
+        "wait": 18,
+        "receive": 10
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:09.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=9",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_1c7bfc4f2a16"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 845,
+        "timeMs": 29
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 27
+      },
+      "timing": {
+        "dns": 9,
+        "connect": 9,
+        "ssl": 9,
+        "send": 1,
+        "wait": 19,
+        "receive": 11
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:10.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=10",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_27ba039091d1"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 882,
+        "timeMs": 30
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 30
+      },
+      "timing": {
+        "dns": 10,
+        "connect": 10,
+        "ssl": 10,
+        "send": 1,
+        "wait": 20,
+        "receive": 12
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:11.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=11",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_146bbe5ac7cc"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 919,
+        "timeMs": 31
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 33
+      },
+      "timing": {
+        "dns": 11,
+        "connect": 11,
+        "ssl": 11,
+        "send": 1,
+        "wait": 21,
+        "receive": 13
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:12.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=12",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_991e78963d4f"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 956,
+        "timeMs": 32
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 36
+      },
+      "timing": {
+        "dns": 12,
+        "connect": 12,
+        "ssl": 12,
+        "send": 1,
+        "wait": 22,
+        "receive": 14
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:13.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=13",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_e1584dcb7a29"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 993,
+        "timeMs": 33
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 39
+      },
+      "timing": {
+        "dns": 13,
+        "connect": 13,
+        "ssl": 13,
+        "send": 1,
+        "wait": 23,
+        "receive": 15
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:14.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=14",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_2a01c0f87dac"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1030,
+        "timeMs": 34
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 42
+      },
+      "timing": {
+        "dns": 14,
+        "connect": 14,
+        "ssl": 14,
+        "send": 1,
+        "wait": 24,
+        "receive": 16
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:15.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=15",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_585754357a60"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1067,
+        "timeMs": 35
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 45
+      },
+      "timing": {
+        "dns": 15,
+        "connect": 15,
+        "ssl": 15,
+        "send": 1,
+        "wait": 25,
+        "receive": 17
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:16.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=16",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_db51e504ea06"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1104,
+        "timeMs": 36
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 48
+      },
+      "timing": {
+        "dns": 16,
+        "connect": 16,
+        "ssl": 16,
+        "send": 1,
+        "wait": 26,
+        "receive": 18
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:17.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=17",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_7d8f23ccee88"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 1141,
+        "timeMs": 37
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 51
+      },
+      "timing": {
+        "dns": 17,
+        "connect": 17,
+        "ssl": 17,
+        "send": 1,
+        "wait": 27,
+        "receive": 19
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:18.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=18",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_dc316f18c5ac"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 1178,
+        "timeMs": 38
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 54
+      },
+      "timing": {
+        "dns": 18,
+        "connect": 18,
+        "ssl": 18,
+        "send": 1,
+        "wait": 28,
+        "receive": 20
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:19.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=19",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_285054b8326b"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1215,
+        "timeMs": 39
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 57
+      },
+      "timing": {
+        "dns": 19,
+        "connect": 19,
+        "ssl": 19,
+        "send": 1,
+        "wait": 29,
+        "receive": 21
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:20.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=20",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_cb83f31cd3b0"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1252,
+        "timeMs": 40
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 60
+      },
+      "timing": {
+        "dns": 20,
+        "connect": 20,
+        "ssl": 20,
+        "send": 1,
+        "wait": 30,
+        "receive": 22
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:21.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=21",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_722d28537d24"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1289,
+        "timeMs": 41
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 63
+      },
+      "timing": {
+        "dns": 21,
+        "connect": 21,
+        "ssl": 21,
+        "send": 1,
+        "wait": 31,
+        "receive": 23
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:22.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=22",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_c75886628983"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 1326,
+        "timeMs": 42
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 66
+      },
+      "timing": {
+        "dns": 22,
+        "connect": 22,
+        "ssl": 22,
+        "send": 1,
+        "wait": 32,
+        "receive": 24
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:23.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=23",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_cca664645444"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 1363,
+        "timeMs": 43
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 69
+      },
+      "timing": {
+        "dns": 23,
+        "connect": 23,
+        "ssl": 23,
+        "send": 1,
+        "wait": 33,
+        "receive": 25
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:24.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=24",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_277ca8197032"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1400,
+        "timeMs": 44
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 72
+      },
+      "timing": {
+        "dns": 24,
+        "connect": 24,
+        "ssl": 24,
+        "send": 1,
+        "wait": 34,
+        "receive": 26
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:25.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=25",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_0fc136dd537c"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1437,
+        "timeMs": 45
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 75
+      },
+      "timing": {
+        "dns": 25,
+        "connect": 25,
+        "ssl": 25,
+        "send": 1,
+        "wait": 35,
+        "receive": 27
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:26.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=26",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_4696e9ad5999"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1474,
+        "timeMs": 46
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 78
+      },
+      "timing": {
+        "dns": 26,
+        "connect": 26,
+        "ssl": 26,
+        "send": 1,
+        "wait": 36,
+        "receive": 28
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:27.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=27",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_349b37745401"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 1511,
+        "timeMs": 47
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 81
+      },
+      "timing": {
+        "dns": 27,
+        "connect": 27,
+        "ssl": 27,
+        "send": 1,
+        "wait": 37,
+        "receive": 29
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:28.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=28",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_bfde0c881ad6"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 1548,
+        "timeMs": 48
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 84
+      },
+      "timing": {
+        "dns": 28,
+        "connect": 28,
+        "ssl": 28,
+        "send": 1,
+        "wait": 38,
+        "receive": 30
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:29.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=29",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_236298ac24c7"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1585,
+        "timeMs": 49
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 87
+      },
+      "timing": {
+        "dns": 29,
+        "connect": 29,
+        "ssl": 29,
+        "send": 1,
+        "wait": 39,
+        "receive": 31
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:30.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=30",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_00561b9764a3"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1622,
+        "timeMs": 50
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 90
+      },
+      "timing": {
+        "dns": 0,
+        "connect": 30,
+        "ssl": 30,
+        "send": 1,
+        "wait": 40,
+        "receive": 32
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:31.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=31",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_f39441680417"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1659,
+        "timeMs": 51
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 93
+      },
+      "timing": {
+        "dns": 1,
+        "connect": 31,
+        "ssl": 31,
+        "send": 1,
+        "wait": 41,
+        "receive": 33
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:32.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=32",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_2416157d5ec3"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 1696,
+        "timeMs": 52
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 96
+      },
+      "timing": {
+        "dns": 2,
+        "connect": 32,
+        "ssl": 32,
+        "send": 1,
+        "wait": 42,
+        "receive": 34
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:33.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=33",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_4a5feb88cb1d"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 1733,
+        "timeMs": 53
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 99
+      },
+      "timing": {
+        "dns": 3,
+        "connect": 33,
+        "ssl": 33,
+        "send": 1,
+        "wait": 43,
+        "receive": 35
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:34.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=34",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_35a9bf5bafc3"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1770,
+        "timeMs": 54
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 102
+      },
+      "timing": {
+        "dns": 4,
+        "connect": 34,
+        "ssl": 34,
+        "send": 1,
+        "wait": 44,
+        "receive": 36
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:35.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=35",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_2b10bd0f9a50"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1807,
+        "timeMs": 55
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 105
+      },
+      "timing": {
+        "dns": 5,
+        "connect": 35,
+        "ssl": 35,
+        "send": 1,
+        "wait": 45,
+        "receive": 37
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:36.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=36",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_2c75b102ede9"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1844,
+        "timeMs": 56
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 108
+      },
+      "timing": {
+        "dns": 6,
+        "connect": 36,
+        "ssl": 36,
+        "send": 1,
+        "wait": 46,
+        "receive": 38
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:37.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=37",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_59e6e21231f3"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 1881,
+        "timeMs": 57
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 111
+      },
+      "timing": {
+        "dns": 7,
+        "connect": 37,
+        "ssl": 37,
+        "send": 1,
+        "wait": 47,
+        "receive": 39
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:38.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=38",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_68f121ae87a3"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 1918,
+        "timeMs": 58
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 114
+      },
+      "timing": {
+        "dns": 8,
+        "connect": 38,
+        "ssl": 38,
+        "send": 1,
+        "wait": 48,
+        "receive": 40
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:39.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=39",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_79656f5124fd"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 1955,
+        "timeMs": 59
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 117
+      },
+      "timing": {
+        "dns": 9,
+        "connect": 39,
+        "ssl": 39,
+        "send": 1,
+        "wait": 49,
+        "receive": 41
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:40.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=40",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_28bc7dfe739b"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 1992,
+        "timeMs": 60
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 0
+      },
+      "timing": {
+        "dns": 10,
+        "connect": 0,
+        "ssl": 40,
+        "send": 1,
+        "wait": 50,
+        "receive": 42
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:41.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=41",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_e8d49ce68089"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2029,
+        "timeMs": 61
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 3
+      },
+      "timing": {
+        "dns": 11,
+        "connect": 1,
+        "ssl": 41,
+        "send": 1,
+        "wait": 51,
+        "receive": 43
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:42.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=42",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_783083bce10a"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2066,
+        "timeMs": 62
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 6
+      },
+      "timing": {
+        "dns": 12,
+        "connect": 2,
+        "ssl": 42,
+        "send": 1,
+        "wait": 52,
+        "receive": 44
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:43.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=43",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_ecbae2c00669"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 2103,
+        "timeMs": 63
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 9
+      },
+      "timing": {
+        "dns": 13,
+        "connect": 3,
+        "ssl": 43,
+        "send": 1,
+        "wait": 53,
+        "receive": 45
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:44.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=44",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_6274dbd6979a"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 2140,
+        "timeMs": 64
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 12
+      },
+      "timing": {
+        "dns": 14,
+        "connect": 4,
+        "ssl": 44,
+        "send": 1,
+        "wait": 54,
+        "receive": 46
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:45.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=45",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_ccaa12930291"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2177,
+        "timeMs": 65
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 15
+      },
+      "timing": {
+        "dns": 15,
+        "connect": 5,
+        "ssl": 45,
+        "send": 1,
+        "wait": 55,
+        "receive": 47
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:46.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=46",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_828cb33d13fe"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2214,
+        "timeMs": 66
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 18
+      },
+      "timing": {
+        "dns": 16,
+        "connect": 6,
+        "ssl": 46,
+        "send": 1,
+        "wait": 56,
+        "receive": 48
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:47.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=47",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_d61253aa736a"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2251,
+        "timeMs": 67
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 21
+      },
+      "timing": {
+        "dns": 17,
+        "connect": 7,
+        "ssl": 47,
+        "send": 1,
+        "wait": 57,
+        "receive": 49
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:48.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=48",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_d39ddd91de73"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 2288,
+        "timeMs": 68
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 24
+      },
+      "timing": {
+        "dns": 18,
+        "connect": 8,
+        "ssl": 48,
+        "send": 1,
+        "wait": 58,
+        "receive": 50
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:49.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=49",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_274c6e84c909"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 2325,
+        "timeMs": 69
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 27
+      },
+      "timing": {
+        "dns": 19,
+        "connect": 9,
+        "ssl": 49,
+        "send": 1,
+        "wait": 59,
+        "receive": 51
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:50.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=50",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_e1602be8c0bb"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2362,
+        "timeMs": 70
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 30
+      },
+      "timing": {
+        "dns": 20,
+        "connect": 10,
+        "ssl": 0,
+        "send": 1,
+        "wait": 60,
+        "receive": 52
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:51.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=51",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_02694e9bdccb"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2399,
+        "timeMs": 71
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 33
+      },
+      "timing": {
+        "dns": 21,
+        "connect": 11,
+        "ssl": 1,
+        "send": 1,
+        "wait": 61,
+        "receive": 53
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:52.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=52",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_36c720f762d5"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2436,
+        "timeMs": 72
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 36
+      },
+      "timing": {
+        "dns": 22,
+        "connect": 12,
+        "ssl": 2,
+        "send": 1,
+        "wait": 62,
+        "receive": 54
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:53.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=53",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_8b3bace0df8c"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 2473,
+        "timeMs": 73
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 39
+      },
+      "timing": {
+        "dns": 23,
+        "connect": 13,
+        "ssl": 3,
+        "send": 1,
+        "wait": 63,
+        "receive": 55
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:54.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=54",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_13631b38d2a1"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 2510,
+        "timeMs": 74
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 42
+      },
+      "timing": {
+        "dns": 24,
+        "connect": 14,
+        "ssl": 4,
+        "send": 1,
+        "wait": 64,
+        "receive": 56
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:55.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=55",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_61ecb3e62682"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2547,
+        "timeMs": 75
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 45
+      },
+      "timing": {
+        "dns": 25,
+        "connect": 15,
+        "ssl": 5,
+        "send": 1,
+        "wait": 65,
+        "receive": 57
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:56.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=56",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_bbbb0b1f6ec0"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2584,
+        "timeMs": 76
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 48
+      },
+      "timing": {
+        "dns": 26,
+        "connect": 16,
+        "ssl": 6,
+        "send": 1,
+        "wait": 66,
+        "receive": 58
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:57.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=57",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_7b2fdeb04aa9"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2621,
+        "timeMs": 77
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 51
+      },
+      "timing": {
+        "dns": 27,
+        "connect": 17,
+        "ssl": 7,
+        "send": 1,
+        "wait": 67,
+        "receive": 59
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:58.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=58",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_9e86f268771b"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 2658,
+        "timeMs": 78
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 54
+      },
+      "timing": {
+        "dns": 28,
+        "connect": 18,
+        "ssl": 8,
+        "send": 1,
+        "wait": 68,
+        "receive": 60
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:59.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=59",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_03e61a3e8882"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 2695,
+        "timeMs": 79
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 57
+      },
+      "timing": {
+        "dns": 29,
+        "connect": 19,
+        "ssl": 9,
+        "send": 1,
+        "wait": 69,
+        "receive": 61
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:00.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=60",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_29dc33809980"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2732,
+        "timeMs": 80
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 60
+      },
+      "timing": {
+        "dns": 0,
+        "connect": 20,
+        "ssl": 10,
+        "send": 1,
+        "wait": 70,
+        "receive": 62
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:01.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=61",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_d584cd7dcf8b"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2769,
+        "timeMs": 81
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 63
+      },
+      "timing": {
+        "dns": 1,
+        "connect": 21,
+        "ssl": 11,
+        "send": 1,
+        "wait": 71,
+        "receive": 63
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:02.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=62",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_e06cfa31077d"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2806,
+        "timeMs": 82
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 66
+      },
+      "timing": {
+        "dns": 2,
+        "connect": 22,
+        "ssl": 12,
+        "send": 1,
+        "wait": 72,
+        "receive": 64
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:03.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=63",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_39d925d3a4c3"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 2843,
+        "timeMs": 83
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 69
+      },
+      "timing": {
+        "dns": 3,
+        "connect": 23,
+        "ssl": 13,
+        "send": 1,
+        "wait": 73,
+        "receive": 65
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:04.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=64",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_b0aacd3952c3"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 2880,
+        "timeMs": 84
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 72
+      },
+      "timing": {
+        "dns": 4,
+        "connect": 24,
+        "ssl": 14,
+        "send": 1,
+        "wait": 74,
+        "receive": 66
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:05.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=65",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_8b930069d44b"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2917,
+        "timeMs": 85
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 75
+      },
+      "timing": {
+        "dns": 5,
+        "connect": 25,
+        "ssl": 15,
+        "send": 1,
+        "wait": 75,
+        "receive": 67
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:06.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=66",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_81188531e70e"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 2954,
+        "timeMs": 86
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 78
+      },
+      "timing": {
+        "dns": 6,
+        "connect": 26,
+        "ssl": 16,
+        "send": 1,
+        "wait": 76,
+        "receive": 68
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:07.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=67",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_34fde2f0060c"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 2991,
+        "timeMs": 87
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 81
+      },
+      "timing": {
+        "dns": 7,
+        "connect": 27,
+        "ssl": 17,
+        "send": 1,
+        "wait": 77,
+        "receive": 69
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:08.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=68",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_21f54280a81a"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3028,
+        "timeMs": 88
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 84
+      },
+      "timing": {
+        "dns": 8,
+        "connect": 28,
+        "ssl": 18,
+        "send": 1,
+        "wait": 78,
+        "receive": 70
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:09.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=69",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_701f1a4eb366"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3065,
+        "timeMs": 89
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 87
+      },
+      "timing": {
+        "dns": 9,
+        "connect": 29,
+        "ssl": 19,
+        "send": 1,
+        "wait": 79,
+        "receive": 71
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:10.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=70",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_cc4765288be2"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3102,
+        "timeMs": 90
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 90
+      },
+      "timing": {
+        "dns": 10,
+        "connect": 30,
+        "ssl": 20,
+        "send": 1,
+        "wait": 80,
+        "receive": 72
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:11.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=71",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_4cd68f6dc90e"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3139,
+        "timeMs": 91
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 93
+      },
+      "timing": {
+        "dns": 11,
+        "connect": 31,
+        "ssl": 21,
+        "send": 1,
+        "wait": 81,
+        "receive": 73
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:12.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=72",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_6bc093d7e932"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 3176,
+        "timeMs": 92
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 96
+      },
+      "timing": {
+        "dns": 12,
+        "connect": 32,
+        "ssl": 22,
+        "send": 1,
+        "wait": 82,
+        "receive": 74
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:13.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=73",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_82dfc263111a"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3213,
+        "timeMs": 93
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 99
+      },
+      "timing": {
+        "dns": 13,
+        "connect": 33,
+        "ssl": 23,
+        "send": 1,
+        "wait": 83,
+        "receive": 75
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:14.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=74",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_dbd9a9a56b1a"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3250,
+        "timeMs": 94
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 102
+      },
+      "timing": {
+        "dns": 14,
+        "connect": 34,
+        "ssl": 24,
+        "send": 1,
+        "wait": 84,
+        "receive": 76
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:15.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=75",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_a3624f039921"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3287,
+        "timeMs": 95
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 105
+      },
+      "timing": {
+        "dns": 15,
+        "connect": 35,
+        "ssl": 25,
+        "send": 1,
+        "wait": 85,
+        "receive": 77
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:16.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=76",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_c025a9fe0acf"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3324,
+        "timeMs": 96
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 108
+      },
+      "timing": {
+        "dns": 16,
+        "connect": 36,
+        "ssl": 26,
+        "send": 1,
+        "wait": 86,
+        "receive": 78
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:17.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=77",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_75d6d15b6bdf"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 3361,
+        "timeMs": 97
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 111
+      },
+      "timing": {
+        "dns": 17,
+        "connect": 37,
+        "ssl": 27,
+        "send": 1,
+        "wait": 87,
+        "receive": 79
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:18.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=78",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_9d2fa56cc236"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3398,
+        "timeMs": 98
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 114
+      },
+      "timing": {
+        "dns": 18,
+        "connect": 38,
+        "ssl": 28,
+        "send": 1,
+        "wait": 88,
+        "receive": 80
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:19.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=79",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_65d5a7e4a6bf"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3435,
+        "timeMs": 99
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 117
+      },
+      "timing": {
+        "dns": 19,
+        "connect": 39,
+        "ssl": 29,
+        "send": 1,
+        "wait": 89,
+        "receive": 81
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:20.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=80",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_ea26cb9553b4"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3472,
+        "timeMs": 100
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 0
+      },
+      "timing": {
+        "dns": 20,
+        "connect": 0,
+        "ssl": 30,
+        "send": 1,
+        "wait": 90,
+        "receive": 82
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:21.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=81",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_e0e459216cd4"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3509,
+        "timeMs": 101
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 3
+      },
+      "timing": {
+        "dns": 21,
+        "connect": 1,
+        "ssl": 31,
+        "send": 1,
+        "wait": 91,
+        "receive": 83
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:22.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=82",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_bca4b3a6f598"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 3546,
+        "timeMs": 102
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 6
+      },
+      "timing": {
+        "dns": 22,
+        "connect": 2,
+        "ssl": 32,
+        "send": 1,
+        "wait": 92,
+        "receive": 84
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:23.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=83",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_5ddfea04b86b"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3583,
+        "timeMs": 103
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 9
+      },
+      "timing": {
+        "dns": 23,
+        "connect": 3,
+        "ssl": 33,
+        "send": 1,
+        "wait": 93,
+        "receive": 85
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:24.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=84",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_4cf13fb45b63"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3620,
+        "timeMs": 104
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 12
+      },
+      "timing": {
+        "dns": 24,
+        "connect": 4,
+        "ssl": 34,
+        "send": 1,
+        "wait": 94,
+        "receive": 86
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:25.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=85",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_341ee70f507b"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3657,
+        "timeMs": 105
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 15
+      },
+      "timing": {
+        "dns": 25,
+        "connect": 5,
+        "ssl": 35,
+        "send": 1,
+        "wait": 95,
+        "receive": 87
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:26.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=86",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_693a67cae63d"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3694,
+        "timeMs": 106
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 18
+      },
+      "timing": {
+        "dns": 26,
+        "connect": 6,
+        "ssl": 36,
+        "send": 1,
+        "wait": 96,
+        "receive": 88
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:27.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=87",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_28df64a7c0b1"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 3731,
+        "timeMs": 107
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 21
+      },
+      "timing": {
+        "dns": 27,
+        "connect": 7,
+        "ssl": 37,
+        "send": 1,
+        "wait": 97,
+        "receive": 89
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:28.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=88",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_d7858f17f164"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3768,
+        "timeMs": 108
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 24
+      },
+      "timing": {
+        "dns": 28,
+        "connect": 8,
+        "ssl": 38,
+        "send": 1,
+        "wait": 98,
+        "receive": 90
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:29.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=89",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_6a0693bbf880"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3805,
+        "timeMs": 109
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 27
+      },
+      "timing": {
+        "dns": 29,
+        "connect": 9,
+        "ssl": 39,
+        "send": 1,
+        "wait": 99,
+        "receive": 91
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:30.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=90",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_85a030853274"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3842,
+        "timeMs": 110
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 30
+      },
+      "timing": {
+        "dns": 0,
+        "connect": 10,
+        "ssl": 40,
+        "send": 1,
+        "wait": 100,
+        "receive": 2
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:31.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=91",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_19e561a94d7e"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 3879,
+        "timeMs": 111
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 33
+      },
+      "timing": {
+        "dns": 1,
+        "connect": 11,
+        "ssl": 41,
+        "send": 1,
+        "wait": 101,
+        "receive": 3
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:32.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=92",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_67d1e89737b4"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 3916,
+        "timeMs": 112
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 36
+      },
+      "timing": {
+        "dns": 2,
+        "connect": 12,
+        "ssl": 42,
+        "send": 1,
+        "wait": 102,
+        "receive": 4
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:33.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=93",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_4d9bc9a40af8"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 3953,
+        "timeMs": 113
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 39
+      },
+      "timing": {
+        "dns": 3,
+        "connect": 13,
+        "ssl": 43,
+        "send": 1,
+        "wait": 103,
+        "receive": 5
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:34.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=94",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_54069d9c5a70"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 3990,
+        "timeMs": 114
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 42
+      },
+      "timing": {
+        "dns": 4,
+        "connect": 14,
+        "ssl": 44,
+        "send": 1,
+        "wait": 104,
+        "receive": 6
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:35.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=95",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_19a4dd2def4e"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4027,
+        "timeMs": 115
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 45
+      },
+      "timing": {
+        "dns": 5,
+        "connect": 15,
+        "ssl": 45,
+        "send": 1,
+        "wait": 105,
+        "receive": 7
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:36.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=96",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_a16bd2e7416c"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4064,
+        "timeMs": 116
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 48
+      },
+      "timing": {
+        "dns": 6,
+        "connect": 16,
+        "ssl": 46,
+        "send": 1,
+        "wait": 106,
+        "receive": 8
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:37.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=97",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_170315ebd6fa"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 4101,
+        "timeMs": 117
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 51
+      },
+      "timing": {
+        "dns": 7,
+        "connect": 17,
+        "ssl": 47,
+        "send": 1,
+        "wait": 107,
+        "receive": 9
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:38.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=98",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_992d0f00437c"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 4138,
+        "timeMs": 118
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 54
+      },
+      "timing": {
+        "dns": 8,
+        "connect": 18,
+        "ssl": 48,
+        "send": 1,
+        "wait": 108,
+        "receive": 10
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:39.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=99",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_7d299cd477b1"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 4175,
+        "timeMs": 119
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 57
+      },
+      "timing": {
+        "dns": 9,
+        "connect": 19,
+        "ssl": 49,
+        "send": 1,
+        "wait": 109,
+        "receive": 11
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:40.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=100",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_59cf629f6add"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4212,
+        "timeMs": 120
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 60
+      },
+      "timing": {
+        "dns": 10,
+        "connect": 20,
+        "ssl": 0,
+        "send": 1,
+        "wait": 110,
+        "receive": 12
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:41.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=101",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_b7a26d1babda"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4249,
+        "timeMs": 121
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 63
+      },
+      "timing": {
+        "dns": 11,
+        "connect": 21,
+        "ssl": 1,
+        "send": 1,
+        "wait": 111,
+        "receive": 13
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:42.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=102",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_643dacad6a6b"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 4286,
+        "timeMs": 122
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 66
+      },
+      "timing": {
+        "dns": 12,
+        "connect": 22,
+        "ssl": 2,
+        "send": 1,
+        "wait": 112,
+        "receive": 14
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:43.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=103",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_56191859101d"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 4323,
+        "timeMs": 123
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 69
+      },
+      "timing": {
+        "dns": 13,
+        "connect": 23,
+        "ssl": 3,
+        "send": 1,
+        "wait": 113,
+        "receive": 15
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:44.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/customers?page=104",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_11e798b4c53d"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 4360,
+        "timeMs": 124
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 72
+      },
+      "timing": {
+        "dns": 14,
+        "connect": 24,
+        "ssl": 4,
+        "send": 1,
+        "wait": 114,
+        "receive": 16
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:45.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/orders?page=105",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_642ace4af5f4"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4397,
+        "timeMs": 125
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 75
+      },
+      "timing": {
+        "dns": 15,
+        "connect": 25,
+        "ssl": 5,
+        "send": 1,
+        "wait": 115,
+        "receive": 17
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:46.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/payments?page=106",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_59c66473d500"
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodySize": 4434,
+        "timeMs": 126
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 78
+      },
+      "timing": {
+        "dns": 16,
+        "connect": 26,
+        "ssl": 6,
+        "send": 1,
+        "wait": 116,
+        "receive": 18
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:47.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/customers?page=107",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_f73967ceebc5"
+        }
+      },
+      "response": {
+        "status": 201,
+        "bodySize": 4471,
+        "timeMs": 127
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 81
+      },
+      "timing": {
+        "dns": 17,
+        "connect": 27,
+        "ssl": 7,
+        "send": 1,
+        "wait": 117,
+        "receive": 19
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:40:48.000Z",
+      "request": {
+        "method": "GET",
+        "url": "https://app.example.com/api/v1/orders?page=108",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_23971a5a9100"
+        }
+      },
+      "response": {
+        "status": 409,
+        "bodySize": 4508,
+        "timeMs": 128
+      },
+      "cache": {
+        "hit": true,
+        "ageSeconds": 84
+      },
+      "timing": {
+        "dns": 18,
+        "connect": 28,
+        "ssl": 8,
+        "send": 1,
+        "wait": 118,
+        "receive": 20
+      }
+    },
+    {
+      "startedDateTime": "2026-03-14T09:41:49.000Z",
+      "request": {
+        "method": "POST",
+        "url": "https://app.example.com/api/v1/payments?page=109",
+        "headers": {
+          "accept": "application/json",
+          "x-request-id": "req_ed04530243a8"
+        }
+      },
+      "response": {
+        "status": 500,
+        "bodySize": 4545,
+        "timeMs": 129
+      },
+      "cache": {
+        "hit": false,
+        "ageSeconds": 87
+      },
+      "timing": {
+        "dns": 19,
+        "connect": 29,
+        "ssl": 9,
+        "send": 1,
+        "wait": 119,
+        "receive": 21
+      }
+    }
+  ],
+  "summary": {
+    "requests": 110,
+    "failures": 22,
+    "slowestMs": 919,
+    "totalBytes": 1840000
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "@srv/app",
+  "version": "4.18.2",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20.11",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "task:react": "node scripts/run.mjs --target react --retries 3 --concurrency 8",
+    "task:react-dom": "node scripts/run.mjs --target react-dom --retries 3 --concurrency 8",
+    "task:vite": "node scripts/run.mjs --target vite --retries 3 --concurrency 8",
+    "task:esbuild": "node scripts/run.mjs --target esbuild --retries 3 --concurrency 8",
+    "task:rollup": "node scripts/run.mjs --target rollup --retries 3 --concurrency 8",
+    "task:typescript": "node scripts/run.mjs --target typescript --retries 3 --concurrency 8",
+    "task:zod": "node scripts/run.mjs --target zod --retries 3 --concurrency 8",
+    "task:undici": "node scripts/run.mjs --target undici --retries 3 --concurrency 8",
+    "task:ws": "node scripts/run.mjs --target ws --retries 3 --concurrency 8",
+    "task:chokidar": "node scripts/run.mjs --target chokidar --retries 3 --concurrency 8"
+  },
+  "dependencies": {
+    "react": "^21.7.7",
+    "react-dom": "^21.4.7",
+    "vite": "^20.1.7",
+    "esbuild": "^19.6.1",
+    "rollup": "^21.0.4",
+    "typescript": "^18.8.2",
+    "zod": "^21.1.5",
+    "undici": "^18.5.6",
+    "ws": "^21.2.3",
+    "chokidar": "^20.7.7"
+  },
+  "devDependencies": {
+    "vitest": "^6.0.0",
+    "@types/node": "^5.0.0",
+    "eslint": "^4.0.0",
+    "prettier": "^6.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "link:../react",
+      "react-dom": "link:../react-dom",
+      "vite": "link:../vite",
+      "esbuild": "link:../esbuild",
+      "rollup": "link:../rollup",
+      "typescript": "link:../typescript"
+    },
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "react": ">=18",
+        "react-dom": ">=18",
+        "vite": ">=18",
+        "esbuild": ">=18",
+        "rollup": ">=18",
+        "typescript": ">=18"
+      }
+    }
+  }
+}

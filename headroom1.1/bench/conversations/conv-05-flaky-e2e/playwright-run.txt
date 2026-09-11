@@ -1,0 +1,379 @@
+$ npx playwright test --workers=4 --retries=2
+
+  ✓  1 e2e/specs/flow0.spec.ts:20 › completes step 0 (400ms)
+  ✓  2 e2e/specs/flow1.spec.ts:21 › completes step 1 (401ms)
+  ✓  3 e2e/specs/flow2.spec.ts:22 › completes step 2 (402ms)
+  ✓  4 e2e/specs/flow3.spec.ts:23 › completes step 3 (403ms)
+  ✓  5 e2e/specs/flow4.spec.ts:24 › completes step 4 (404ms)
+  ✓  6 e2e/specs/flow5.spec.ts:25 › completes step 5 (405ms)
+  ✓  7 e2e/specs/flow6.spec.ts:26 › completes step 6 (406ms)
+  ✓  8 e2e/specs/flow7.spec.ts:27 › completes step 7 (407ms)
+  ✓  9 e2e/specs/flow8.spec.ts:28 › completes step 8 (408ms)
+  ✓  10 e2e/specs/flow9.spec.ts:29 › completes step 9 (409ms)
+  ✓  11 e2e/specs/flow10.spec.ts:30 › completes step 10 (410ms)
+  ✓  12 e2e/specs/flow11.spec.ts:31 › completes step 11 (411ms)
+  ✓  13 e2e/specs/flow12.spec.ts:32 › completes step 12 (412ms)
+  ✓  14 e2e/specs/flow13.spec.ts:33 › completes step 13 (413ms)
+  ✓  15 e2e/specs/flow14.spec.ts:34 › completes step 14 (414ms)
+  ✓  16 e2e/specs/flow15.spec.ts:35 › completes step 15 (415ms)
+  ✓  17 e2e/specs/flow16.spec.ts:36 › completes step 16 (416ms)
+  ✓  18 e2e/specs/flow17.spec.ts:37 › completes step 17 (417ms)
+  ✓  19 e2e/specs/flow18.spec.ts:38 › completes step 18 (418ms)
+  ✓  20 e2e/specs/flow19.spec.ts:39 › completes step 19 (419ms)
+  ✓  21 e2e/specs/flow20.spec.ts:40 › completes step 20 (420ms)
+  ✓  22 e2e/specs/flow21.spec.ts:41 › completes step 21 (421ms)
+  ✓  23 e2e/specs/flow22.spec.ts:42 › completes step 22 (422ms)
+  ✓  24 e2e/specs/flow23.spec.ts:43 › completes step 23 (423ms)
+  ✓  25 e2e/specs/flow24.spec.ts:44 › completes step 24 (424ms)
+  ✓  26 e2e/specs/flow25.spec.ts:45 › completes step 25 (425ms)
+  ✓  27 e2e/specs/flow26.spec.ts:46 › completes step 26 (426ms)
+  ✓  28 e2e/specs/flow27.spec.ts:47 › completes step 27 (427ms)
+  ✓  29 e2e/specs/flow28.spec.ts:48 › completes step 28 (428ms)
+  ✓  30 e2e/specs/flow29.spec.ts:49 › completes step 29 (429ms)
+  ✓  31 e2e/specs/flow30.spec.ts:50 › completes step 30 (430ms)
+  ✓  32 e2e/specs/flow31.spec.ts:51 › completes step 31 (431ms)
+  ✓  33 e2e/specs/flow32.spec.ts:52 › completes step 32 (432ms)
+  ✓  34 e2e/specs/flow33.spec.ts:53 › completes step 33 (433ms)
+  ✓  35 e2e/specs/flow34.spec.ts:54 › completes step 34 (434ms)
+  ✓  36 e2e/specs/flow35.spec.ts:55 › completes step 35 (435ms)
+  ✓  37 e2e/specs/flow0.spec.ts:56 › completes step 36 (436ms)
+  ✓  38 e2e/specs/flow1.spec.ts:57 › completes step 37 (437ms)
+  ✓  39 e2e/specs/flow2.spec.ts:58 › completes step 38 (438ms)
+  ✓  40 e2e/specs/flow3.spec.ts:59 › completes step 39 (439ms)
+  ✓  41 e2e/specs/flow4.spec.ts:60 › completes step 40 (440ms)
+  ✓  42 e2e/specs/flow5.spec.ts:61 › completes step 41 (441ms)
+  ✓  43 e2e/specs/flow6.spec.ts:62 › completes step 42 (442ms)
+  ✓  44 e2e/specs/flow7.spec.ts:63 › completes step 43 (443ms)
+  ✓  45 e2e/specs/flow8.spec.ts:64 › completes step 44 (444ms)
+  ✓  46 e2e/specs/flow9.spec.ts:65 › completes step 45 (445ms)
+  ✓  47 e2e/specs/flow10.spec.ts:66 › completes step 46 (446ms)
+  ✓  48 e2e/specs/flow11.spec.ts:67 › completes step 47 (447ms)
+  ✓  49 e2e/specs/flow12.spec.ts:68 › completes step 48 (448ms)
+  ✓  50 e2e/specs/flow13.spec.ts:69 › completes step 49 (449ms)
+  ✓  51 e2e/specs/flow14.spec.ts:70 › completes step 50 (450ms)
+  ✓  52 e2e/specs/flow15.spec.ts:71 › completes step 51 (451ms)
+  ✓  53 e2e/specs/flow16.spec.ts:72 › completes step 52 (452ms)
+  ✓  54 e2e/specs/flow17.spec.ts:73 › completes step 53 (453ms)
+  ✓  55 e2e/specs/flow18.spec.ts:74 › completes step 54 (454ms)
+  ✓  56 e2e/specs/flow19.spec.ts:75 › completes step 55 (455ms)
+  ✓  57 e2e/specs/flow20.spec.ts:76 › completes step 56 (456ms)
+  ✓  58 e2e/specs/flow21.spec.ts:77 › completes step 57 (457ms)
+  ✓  59 e2e/specs/flow22.spec.ts:78 › completes step 58 (458ms)
+  ✓  60 e2e/specs/flow23.spec.ts:79 › completes step 59 (459ms)
+  ✓  61 e2e/specs/flow24.spec.ts:80 › completes step 60 (460ms)
+  ✓  62 e2e/specs/flow25.spec.ts:81 › completes step 61 (461ms)
+  ✓  63 e2e/specs/flow26.spec.ts:82 › completes step 62 (462ms)
+  ✓  64 e2e/specs/flow27.spec.ts:83 › completes step 63 (463ms)
+  ✓  65 e2e/specs/flow28.spec.ts:84 › completes step 64 (464ms)
+  ✓  66 e2e/specs/flow29.spec.ts:85 › completes step 65 (465ms)
+  ✓  67 e2e/specs/flow30.spec.ts:86 › completes step 66 (466ms)
+  ✓  68 e2e/specs/flow31.spec.ts:87 › completes step 67 (467ms)
+  ✓  69 e2e/specs/flow32.spec.ts:88 › completes step 68 (468ms)
+  ✓  70 e2e/specs/flow33.spec.ts:89 › completes step 69 (469ms)
+  ✓  71 e2e/specs/flow34.spec.ts:90 › completes step 70 (470ms)
+  ✓  72 e2e/specs/flow35.spec.ts:91 › completes step 71 (471ms)
+  ✓  73 e2e/specs/flow0.spec.ts:92 › completes step 72 (472ms)
+  ✓  74 e2e/specs/flow1.spec.ts:93 › completes step 73 (473ms)
+  ✓  75 e2e/specs/flow2.spec.ts:94 › completes step 74 (474ms)
+  ✓  76 e2e/specs/flow3.spec.ts:95 › completes step 75 (475ms)
+  ✓  77 e2e/specs/flow4.spec.ts:96 › completes step 76 (476ms)
+  ✓  78 e2e/specs/flow5.spec.ts:97 › completes step 77 (477ms)
+  ✓  79 e2e/specs/flow6.spec.ts:98 › completes step 78 (478ms)
+  ✓  80 e2e/specs/flow7.spec.ts:99 › completes step 79 (479ms)
+  ✓  81 e2e/specs/flow8.spec.ts:100 › completes step 80 (480ms)
+  ✓  82 e2e/specs/flow9.spec.ts:101 › completes step 81 (481ms)
+  ✓  83 e2e/specs/flow10.spec.ts:102 › completes step 82 (482ms)
+  ✓  84 e2e/specs/flow11.spec.ts:103 › completes step 83 (483ms)
+  ✓  85 e2e/specs/flow12.spec.ts:104 › completes step 84 (484ms)
+  ✓  86 e2e/specs/flow13.spec.ts:105 › completes step 85 (485ms)
+  ✓  87 e2e/specs/flow14.spec.ts:106 › completes step 86 (486ms)
+  ✓  88 e2e/specs/flow15.spec.ts:107 › completes step 87 (487ms)
+  ✓  89 e2e/specs/flow16.spec.ts:108 › completes step 88 (488ms)
+  ✓  90 e2e/specs/flow17.spec.ts:109 › completes step 89 (489ms)
+  ✓  91 e2e/specs/flow18.spec.ts:110 › completes step 90 (490ms)
+  ✓  92 e2e/specs/flow19.spec.ts:111 › completes step 91 (491ms)
+  ✓  93 e2e/specs/flow20.spec.ts:112 › completes step 92 (492ms)
+  ✓  94 e2e/specs/flow21.spec.ts:113 › completes step 93 (493ms)
+  ✓  95 e2e/specs/flow22.spec.ts:114 › completes step 94 (494ms)
+  ✓  96 e2e/specs/flow23.spec.ts:115 › completes step 95 (495ms)
+  ✓  97 e2e/specs/flow24.spec.ts:116 › completes step 96 (496ms)
+  ✓  98 e2e/specs/flow25.spec.ts:117 › completes step 97 (497ms)
+  ✓  99 e2e/specs/flow26.spec.ts:118 › completes step 98 (498ms)
+  ✓  100 e2e/specs/flow27.spec.ts:119 › completes step 99 (499ms)
+  ✓  101 e2e/specs/flow28.spec.ts:120 › completes step 100 (500ms)
+  ✓  102 e2e/specs/flow29.spec.ts:121 › completes step 101 (501ms)
+  ✓  103 e2e/specs/flow30.spec.ts:122 › completes step 102 (502ms)
+  ✓  104 e2e/specs/flow31.spec.ts:123 › completes step 103 (503ms)
+  ✓  105 e2e/specs/flow32.spec.ts:124 › completes step 104 (504ms)
+  ✓  106 e2e/specs/flow33.spec.ts:125 › completes step 105 (505ms)
+  ✓  107 e2e/specs/flow34.spec.ts:126 › completes step 106 (506ms)
+  ✓  108 e2e/specs/flow35.spec.ts:127 › completes step 107 (507ms)
+  ✓  109 e2e/specs/flow0.spec.ts:128 › completes step 108 (508ms)
+  ✓  110 e2e/specs/flow1.spec.ts:129 › completes step 109 (509ms)
+  ✓  111 e2e/specs/flow2.spec.ts:130 › completes step 110 (510ms)
+  ✓  112 e2e/specs/flow3.spec.ts:131 › completes step 111 (511ms)
+  ✓  113 e2e/specs/flow4.spec.ts:132 › completes step 112 (512ms)
+  ✓  114 e2e/specs/flow5.spec.ts:133 › completes step 113 (513ms)
+  ✓  115 e2e/specs/flow6.spec.ts:134 › completes step 114 (514ms)
+  ✓  116 e2e/specs/flow7.spec.ts:135 › completes step 115 (515ms)
+  ✓  117 e2e/specs/flow8.spec.ts:136 › completes step 116 (516ms)
+  ✓  118 e2e/specs/flow9.spec.ts:137 › completes step 117 (517ms)
+  ✓  119 e2e/specs/flow10.spec.ts:138 › completes step 118 (518ms)
+  ✓  120 e2e/specs/flow11.spec.ts:139 › completes step 119 (519ms)
+  ✓  121 e2e/specs/flow12.spec.ts:140 › completes step 120 (520ms)
+  ✓  122 e2e/specs/flow13.spec.ts:141 › completes step 121 (521ms)
+  ✓  123 e2e/specs/flow14.spec.ts:142 › completes step 122 (522ms)
+  ✓  124 e2e/specs/flow15.spec.ts:143 › completes step 123 (523ms)
+  ✓  125 e2e/specs/flow16.spec.ts:144 › completes step 124 (524ms)
+  ✓  126 e2e/specs/flow17.spec.ts:145 › completes step 125 (525ms)
+  ✓  127 e2e/specs/flow18.spec.ts:146 › completes step 126 (526ms)
+  ✓  128 e2e/specs/flow19.spec.ts:147 › completes step 127 (527ms)
+  ✓  129 e2e/specs/flow20.spec.ts:148 › completes step 128 (528ms)
+  ✓  130 e2e/specs/flow21.spec.ts:149 › completes step 129 (529ms)
+  ✓  131 e2e/specs/flow22.spec.ts:150 › completes step 130 (530ms)
+  ✓  132 e2e/specs/flow23.spec.ts:151 › completes step 131 (531ms)
+  ✓  133 e2e/specs/flow24.spec.ts:152 › completes step 132 (532ms)
+  ✓  134 e2e/specs/flow25.spec.ts:153 › completes step 133 (533ms)
+  ✓  135 e2e/specs/flow26.spec.ts:154 › completes step 134 (534ms)
+  ✓  136 e2e/specs/flow27.spec.ts:155 › completes step 135 (535ms)
+  ✓  137 e2e/specs/flow28.spec.ts:156 › completes step 136 (536ms)
+  ✓  138 e2e/specs/flow29.spec.ts:157 › completes step 137 (537ms)
+  ✓  139 e2e/specs/flow30.spec.ts:158 › completes step 138 (538ms)
+  ✓  140 e2e/specs/flow31.spec.ts:159 › completes step 139 (539ms)
+  ✓  141 e2e/specs/flow32.spec.ts:160 › completes step 140 (540ms)
+  ✓  142 e2e/specs/flow33.spec.ts:161 › completes step 141 (541ms)
+  ✓  143 e2e/specs/flow34.spec.ts:162 › completes step 142 (542ms)
+  ✓  144 e2e/specs/flow35.spec.ts:163 › completes step 143 (543ms)
+  ✓  145 e2e/specs/flow0.spec.ts:164 › completes step 144 (544ms)
+  ✓  146 e2e/specs/flow1.spec.ts:165 › completes step 145 (545ms)
+  ✓  147 e2e/specs/flow2.spec.ts:166 › completes step 146 (546ms)
+  ✓  148 e2e/specs/flow3.spec.ts:167 › completes step 147 (547ms)
+  ✓  149 e2e/specs/flow4.spec.ts:168 › completes step 148 (548ms)
+  ✓  150 e2e/specs/flow5.spec.ts:169 › completes step 149 (549ms)
+  ✓  151 e2e/specs/flow6.spec.ts:170 › completes step 150 (550ms)
+  ✓  152 e2e/specs/flow7.spec.ts:171 › completes step 151 (551ms)
+  ✓  153 e2e/specs/flow8.spec.ts:172 › completes step 152 (552ms)
+  ✓  154 e2e/specs/flow9.spec.ts:173 › completes step 153 (553ms)
+  ✓  155 e2e/specs/flow10.spec.ts:174 › completes step 154 (554ms)
+  ✓  156 e2e/specs/flow11.spec.ts:175 › completes step 155 (555ms)
+  ✓  157 e2e/specs/flow12.spec.ts:176 › completes step 156 (556ms)
+  ✓  158 e2e/specs/flow13.spec.ts:177 › completes step 157 (557ms)
+  ✓  159 e2e/specs/flow14.spec.ts:178 › completes step 158 (558ms)
+  ✓  160 e2e/specs/flow15.spec.ts:179 › completes step 159 (559ms)
+  ✓  161 e2e/specs/flow16.spec.ts:180 › completes step 160 (560ms)
+  ✓  162 e2e/specs/flow17.spec.ts:181 › completes step 161 (561ms)
+  ✓  163 e2e/specs/flow18.spec.ts:182 › completes step 162 (562ms)
+  ✓  164 e2e/specs/flow19.spec.ts:183 › completes step 163 (563ms)
+  ✓  165 e2e/specs/flow20.spec.ts:184 › completes step 164 (564ms)
+  ✓  166 e2e/specs/flow21.spec.ts:185 › completes step 165 (565ms)
+  ✓  167 e2e/specs/flow22.spec.ts:186 › completes step 166 (566ms)
+  ✓  168 e2e/specs/flow23.spec.ts:187 › completes step 167 (567ms)
+  ✓  169 e2e/specs/flow24.spec.ts:188 › completes step 168 (568ms)
+  ✓  170 e2e/specs/flow25.spec.ts:189 › completes step 169 (569ms)
+  ✓  171 e2e/specs/flow26.spec.ts:190 › completes step 170 (570ms)
+  ✓  172 e2e/specs/flow27.spec.ts:191 › completes step 171 (571ms)
+  ✓  173 e2e/specs/flow28.spec.ts:192 › completes step 172 (572ms)
+  ✓  174 e2e/specs/flow29.spec.ts:193 › completes step 173 (573ms)
+  ✓  175 e2e/specs/flow30.spec.ts:194 › completes step 174 (574ms)
+  ✓  176 e2e/specs/flow31.spec.ts:195 › completes step 175 (575ms)
+  ✓  177 e2e/specs/flow32.spec.ts:196 › completes step 176 (576ms)
+  ✓  178 e2e/specs/flow33.spec.ts:197 › completes step 177 (577ms)
+  ✓  179 e2e/specs/flow34.spec.ts:198 › completes step 178 (578ms)
+  ✓  180 e2e/specs/flow35.spec.ts:199 › completes step 179 (579ms)
+  ✓  181 e2e/specs/flow0.spec.ts:200 › completes step 180 (580ms)
+  ✓  182 e2e/specs/flow1.spec.ts:201 › completes step 181 (581ms)
+  ✓  183 e2e/specs/flow2.spec.ts:202 › completes step 182 (582ms)
+  ✓  184 e2e/specs/flow3.spec.ts:203 › completes step 183 (583ms)
+  ✓  185 e2e/specs/flow4.spec.ts:204 › completes step 184 (584ms)
+  ✓  186 e2e/specs/flow5.spec.ts:205 › completes step 185 (585ms)
+  ✓  187 e2e/specs/flow6.spec.ts:206 › completes step 186 (586ms)
+  ✓  188 e2e/specs/flow7.spec.ts:207 › completes step 187 (587ms)
+  ✓  189 e2e/specs/flow8.spec.ts:208 › completes step 188 (588ms)
+  ✓  190 e2e/specs/flow9.spec.ts:209 › completes step 189 (589ms)
+  ✓  191 e2e/specs/flow10.spec.ts:210 › completes step 190 (590ms)
+  ✓  192 e2e/specs/flow11.spec.ts:211 › completes step 191 (591ms)
+  ✓  193 e2e/specs/flow12.spec.ts:212 › completes step 192 (592ms)
+  ✓  194 e2e/specs/flow13.spec.ts:213 › completes step 193 (593ms)
+  ✓  195 e2e/specs/flow14.spec.ts:214 › completes step 194 (594ms)
+  ✓  196 e2e/specs/flow15.spec.ts:215 › completes step 195 (595ms)
+  ✓  197 e2e/specs/flow16.spec.ts:216 › completes step 196 (596ms)
+  ✓  198 e2e/specs/flow17.spec.ts:217 › completes step 197 (597ms)
+  ✓  199 e2e/specs/flow18.spec.ts:218 › completes step 198 (598ms)
+  ✓  200 e2e/specs/flow19.spec.ts:219 › completes step 199 (599ms)
+  ✓  201 e2e/specs/flow20.spec.ts:220 › completes step 200 (600ms)
+  ✓  202 e2e/specs/flow21.spec.ts:221 › completes step 201 (601ms)
+  ✓  203 e2e/specs/flow22.spec.ts:222 › completes step 202 (602ms)
+  ✓  204 e2e/specs/flow23.spec.ts:223 › completes step 203 (603ms)
+  ✓  205 e2e/specs/flow24.spec.ts:224 › completes step 204 (604ms)
+  ✓  206 e2e/specs/flow25.spec.ts:225 › completes step 205 (605ms)
+  ✓  207 e2e/specs/flow26.spec.ts:226 › completes step 206 (606ms)
+  ✓  208 e2e/specs/flow27.spec.ts:227 › completes step 207 (607ms)
+  ✓  209 e2e/specs/flow28.spec.ts:228 › completes step 208 (608ms)
+  ✓  210 e2e/specs/flow29.spec.ts:229 › completes step 209 (609ms)
+  ✓  211 e2e/specs/flow30.spec.ts:230 › completes step 210 (610ms)
+  ✓  212 e2e/specs/flow31.spec.ts:231 › completes step 211 (611ms)
+  ✓  213 e2e/specs/flow32.spec.ts:232 › completes step 212 (612ms)
+  ✓  214 e2e/specs/flow33.spec.ts:233 › completes step 213 (613ms)
+  ✓  215 e2e/specs/flow34.spec.ts:234 › completes step 214 (614ms)
+  ✓  216 e2e/specs/flow35.spec.ts:235 › completes step 215 (615ms)
+  ✓  217 e2e/specs/flow0.spec.ts:236 › completes step 216 (616ms)
+  ✓  218 e2e/specs/flow1.spec.ts:237 › completes step 217 (617ms)
+  ✓  219 e2e/specs/flow2.spec.ts:238 › completes step 218 (618ms)
+  ✓  220 e2e/specs/flow3.spec.ts:239 › completes step 219 (619ms)
+  ✓  221 e2e/specs/flow4.spec.ts:240 › completes step 220 (620ms)
+  ✓  222 e2e/specs/flow5.spec.ts:241 › completes step 221 (621ms)
+  ✓  223 e2e/specs/flow6.spec.ts:242 › completes step 222 (622ms)
+  ✓  224 e2e/specs/flow7.spec.ts:243 › completes step 223 (623ms)
+  ✓  225 e2e/specs/flow8.spec.ts:244 › completes step 224 (624ms)
+  ✓  226 e2e/specs/flow9.spec.ts:245 › completes step 225 (625ms)
+  ✓  227 e2e/specs/flow10.spec.ts:246 › completes step 226 (626ms)
+  ✓  228 e2e/specs/flow11.spec.ts:247 › completes step 227 (627ms)
+  ✓  229 e2e/specs/flow12.spec.ts:248 › completes step 228 (628ms)
+  ✓  230 e2e/specs/flow13.spec.ts:249 › completes step 229 (629ms)
+  ✓  231 e2e/specs/flow14.spec.ts:250 › completes step 230 (630ms)
+  ✓  232 e2e/specs/flow15.spec.ts:251 › completes step 231 (631ms)
+  ✓  233 e2e/specs/flow16.spec.ts:252 › completes step 232 (632ms)
+  ✓  234 e2e/specs/flow17.spec.ts:253 › completes step 233 (633ms)
+  ✓  235 e2e/specs/flow18.spec.ts:254 › completes step 234 (634ms)
+  ✓  236 e2e/specs/flow19.spec.ts:255 › completes step 235 (635ms)
+  ✓  237 e2e/specs/flow20.spec.ts:256 › completes step 236 (636ms)
+  ✓  238 e2e/specs/flow21.spec.ts:257 › completes step 237 (637ms)
+  ✓  239 e2e/specs/flow22.spec.ts:258 › completes step 238 (638ms)
+  ✓  240 e2e/specs/flow23.spec.ts:259 › completes step 239 (639ms)
+  ✓  241 e2e/specs/flow24.spec.ts:260 › completes step 240 (640ms)
+  ✓  242 e2e/specs/flow25.spec.ts:261 › completes step 241 (641ms)
+  ✓  243 e2e/specs/flow26.spec.ts:262 › completes step 242 (642ms)
+  ✓  244 e2e/specs/flow27.spec.ts:263 › completes step 243 (643ms)
+  ✓  245 e2e/specs/flow28.spec.ts:264 › completes step 244 (644ms)
+  ✓  246 e2e/specs/flow29.spec.ts:265 › completes step 245 (645ms)
+  ✓  247 e2e/specs/flow30.spec.ts:266 › completes step 246 (646ms)
+  ✓  248 e2e/specs/flow31.spec.ts:267 › completes step 247 (647ms)
+  ✓  249 e2e/specs/flow32.spec.ts:268 › completes step 248 (648ms)
+  ✓  250 e2e/specs/flow33.spec.ts:269 › completes step 249 (649ms)
+  ✓  251 e2e/specs/flow34.spec.ts:270 › completes step 250 (650ms)
+  ✓  252 e2e/specs/flow35.spec.ts:271 › completes step 251 (651ms)
+  ✓  253 e2e/specs/flow0.spec.ts:272 › completes step 252 (652ms)
+  ✓  254 e2e/specs/flow1.spec.ts:273 › completes step 253 (653ms)
+  ✓  255 e2e/specs/flow2.spec.ts:274 › completes step 254 (654ms)
+  ✓  256 e2e/specs/flow3.spec.ts:275 › completes step 255 (655ms)
+  ✓  257 e2e/specs/flow4.spec.ts:276 › completes step 256 (656ms)
+  ✓  258 e2e/specs/flow5.spec.ts:277 › completes step 257 (657ms)
+  ✓  259 e2e/specs/flow6.spec.ts:278 › completes step 258 (658ms)
+  ✓  260 e2e/specs/flow7.spec.ts:279 › completes step 259 (659ms)
+  ✓  261 e2e/specs/flow8.spec.ts:280 › completes step 260 (660ms)
+  ✓  262 e2e/specs/flow9.spec.ts:281 › completes step 261 (661ms)
+  ✓  263 e2e/specs/flow10.spec.ts:282 › completes step 262 (662ms)
+  ✓  264 e2e/specs/flow11.spec.ts:283 › completes step 263 (663ms)
+  ✓  265 e2e/specs/flow12.spec.ts:284 › completes step 264 (664ms)
+  ✓  266 e2e/specs/flow13.spec.ts:285 › completes step 265 (665ms)
+  ✓  267 e2e/specs/flow14.spec.ts:286 › completes step 266 (666ms)
+  ✓  268 e2e/specs/flow15.spec.ts:287 › completes step 267 (667ms)
+  ✓  269 e2e/specs/flow16.spec.ts:288 › completes step 268 (668ms)
+  ✓  270 e2e/specs/flow17.spec.ts:289 › completes step 269 (669ms)
+  ✓  271 e2e/specs/flow18.spec.ts:290 › completes step 270 (670ms)
+  ✓  272 e2e/specs/flow19.spec.ts:291 › completes step 271 (671ms)
+  ✓  273 e2e/specs/flow20.spec.ts:292 › completes step 272 (672ms)
+  ✓  274 e2e/specs/flow21.spec.ts:293 › completes step 273 (673ms)
+  ✓  275 e2e/specs/flow22.spec.ts:294 › completes step 274 (674ms)
+  ✓  276 e2e/specs/flow23.spec.ts:295 › completes step 275 (675ms)
+  ✓  277 e2e/specs/flow24.spec.ts:296 › completes step 276 (676ms)
+  ✓  278 e2e/specs/flow25.spec.ts:297 › completes step 277 (677ms)
+  ✓  279 e2e/specs/flow26.spec.ts:298 › completes step 278 (678ms)
+  ✓  280 e2e/specs/flow27.spec.ts:299 › completes step 279 (679ms)
+  ✘  281 e2e/specs/checkout.spec.ts:88 › submits the order
+       TimeoutError: locator.click: Timeout 30000ms exceeded waiting for getByRole("button", { name: "Pay now" })
+       at e2e/specs/checkout.spec.ts:88:24
+  ✘  282 e2e/specs/checkout.spec.ts:104 › retries the payment
+       Error: expect(received).toBe(expected) — expected 1 attempt, received 3
+  ⟳  retry 0 e2e/specs/flow0.spec.ts:20 — retrying after 500ms backoff
+  ⟳  retry 1 e2e/specs/flow1.spec.ts:21 — retrying after 510ms backoff
+  ⟳  retry 2 e2e/specs/flow2.spec.ts:22 — retrying after 520ms backoff
+  ⟳  retry 0 e2e/specs/flow3.spec.ts:23 — retrying after 530ms backoff
+  ⟳  retry 1 e2e/specs/flow4.spec.ts:24 — retrying after 540ms backoff
+  ⟳  retry 2 e2e/specs/flow5.spec.ts:25 — retrying after 550ms backoff
+  ⟳  retry 0 e2e/specs/flow6.spec.ts:26 — retrying after 560ms backoff
+  ⟳  retry 1 e2e/specs/flow7.spec.ts:27 — retrying after 570ms backoff
+  ⟳  retry 2 e2e/specs/flow8.spec.ts:28 — retrying after 580ms backoff
+  ⟳  retry 0 e2e/specs/flow9.spec.ts:29 — retrying after 590ms backoff
+  ⟳  retry 1 e2e/specs/flow10.spec.ts:30 — retrying after 600ms backoff
+  ⟳  retry 2 e2e/specs/flow11.spec.ts:31 — retrying after 610ms backoff
+  ⟳  retry 0 e2e/specs/flow12.spec.ts:32 — retrying after 620ms backoff
+  ⟳  retry 1 e2e/specs/flow13.spec.ts:33 — retrying after 630ms backoff
+  ⟳  retry 2 e2e/specs/flow14.spec.ts:34 — retrying after 640ms backoff
+  ⟳  retry 0 e2e/specs/flow15.spec.ts:35 — retrying after 650ms backoff
+  ⟳  retry 1 e2e/specs/flow16.spec.ts:36 — retrying after 660ms backoff
+  ⟳  retry 2 e2e/specs/flow17.spec.ts:37 — retrying after 670ms backoff
+  ⟳  retry 0 e2e/specs/flow18.spec.ts:38 — retrying after 680ms backoff
+  ⟳  retry 1 e2e/specs/flow19.spec.ts:39 — retrying after 690ms backoff
+  ⟳  retry 2 e2e/specs/flow20.spec.ts:40 — retrying after 700ms backoff
+  ⟳  retry 0 e2e/specs/flow21.spec.ts:41 — retrying after 710ms backoff
+  ⟳  retry 1 e2e/specs/flow22.spec.ts:42 — retrying after 720ms backoff
+  ⟳  retry 2 e2e/specs/flow23.spec.ts:43 — retrying after 730ms backoff
+  ⟳  retry 0 e2e/specs/flow24.spec.ts:44 — retrying after 740ms backoff
+  ⟳  retry 1 e2e/specs/flow25.spec.ts:45 — retrying after 750ms backoff
+  ⟳  retry 2 e2e/specs/flow26.spec.ts:46 — retrying after 760ms backoff
+  ⟳  retry 0 e2e/specs/flow27.spec.ts:47 — retrying after 770ms backoff
+  ⟳  retry 1 e2e/specs/flow28.spec.ts:48 — retrying after 780ms backoff
+  ⟳  retry 2 e2e/specs/flow29.spec.ts:49 — retrying after 790ms backoff
+  ⟳  retry 0 e2e/specs/flow30.spec.ts:50 — retrying after 800ms backoff
+  ⟳  retry 1 e2e/specs/flow31.spec.ts:51 — retrying after 810ms backoff
+  ⟳  retry 2 e2e/specs/flow32.spec.ts:52 — retrying after 820ms backoff
+  ⟳  retry 0 e2e/specs/flow33.spec.ts:53 — retrying after 830ms backoff
+  ⟳  retry 1 e2e/specs/flow34.spec.ts:54 — retrying after 840ms backoff
+  ⟳  retry 2 e2e/specs/flow35.spec.ts:55 — retrying after 850ms backoff
+  ⟳  retry 0 e2e/specs/flow0.spec.ts:56 — retrying after 860ms backoff
+  ⟳  retry 1 e2e/specs/flow1.spec.ts:57 — retrying after 870ms backoff
+  ⟳  retry 2 e2e/specs/flow2.spec.ts:58 — retrying after 880ms backoff
+  ⟳  retry 0 e2e/specs/flow3.spec.ts:59 — retrying after 890ms backoff
+  ⟳  retry 1 e2e/specs/flow4.spec.ts:60 — retrying after 900ms backoff
+  ⟳  retry 2 e2e/specs/flow5.spec.ts:61 — retrying after 910ms backoff
+  ⟳  retry 0 e2e/specs/flow6.spec.ts:62 — retrying after 920ms backoff
+  ⟳  retry 1 e2e/specs/flow7.spec.ts:63 — retrying after 930ms backoff
+  ⟳  retry 2 e2e/specs/flow8.spec.ts:64 — retrying after 940ms backoff
+  ⟳  retry 0 e2e/specs/flow9.spec.ts:65 — retrying after 950ms backoff
+  ⟳  retry 1 e2e/specs/flow10.spec.ts:66 — retrying after 960ms backoff
+  ⟳  retry 2 e2e/specs/flow11.spec.ts:67 — retrying after 970ms backoff
+  ⟳  retry 0 e2e/specs/flow12.spec.ts:68 — retrying after 980ms backoff
+  ⟳  retry 1 e2e/specs/flow13.spec.ts:69 — retrying after 990ms backoff
+  ⟳  retry 2 e2e/specs/flow14.spec.ts:70 — retrying after 1000ms backoff
+  ⟳  retry 0 e2e/specs/flow15.spec.ts:71 — retrying after 1010ms backoff
+  ⟳  retry 1 e2e/specs/flow16.spec.ts:72 — retrying after 1020ms backoff
+  ⟳  retry 2 e2e/specs/flow17.spec.ts:73 — retrying after 1030ms backoff
+  ⟳  retry 0 e2e/specs/flow18.spec.ts:74 — retrying after 1040ms backoff
+  ⟳  retry 1 e2e/specs/flow19.spec.ts:75 — retrying after 1050ms backoff
+  ⟳  retry 2 e2e/specs/flow20.spec.ts:76 — retrying after 1060ms backoff
+  ⟳  retry 0 e2e/specs/flow21.spec.ts:77 — retrying after 1070ms backoff
+  ⟳  retry 1 e2e/specs/flow22.spec.ts:78 — retrying after 1080ms backoff
+  ⟳  retry 2 e2e/specs/flow23.spec.ts:79 — retrying after 1090ms backoff
+  ⟳  retry 0 e2e/specs/flow24.spec.ts:80 — retrying after 1100ms backoff
+  ⟳  retry 1 e2e/specs/flow25.spec.ts:81 — retrying after 1110ms backoff
+  ⟳  retry 2 e2e/specs/flow26.spec.ts:82 — retrying after 1120ms backoff
+  ⟳  retry 0 e2e/specs/flow27.spec.ts:83 — retrying after 1130ms backoff
+  ⟳  retry 1 e2e/specs/flow28.spec.ts:84 — retrying after 1140ms backoff
+  ⟳  retry 2 e2e/specs/flow29.spec.ts:85 — retrying after 1150ms backoff
+  ⟳  retry 0 e2e/specs/flow30.spec.ts:86 — retrying after 1160ms backoff
+  ⟳  retry 1 e2e/specs/flow31.spec.ts:87 — retrying after 1170ms backoff
+  ⟳  retry 2 e2e/specs/flow32.spec.ts:88 — retrying after 1180ms backoff
+  ⟳  retry 0 e2e/specs/flow33.spec.ts:89 — retrying after 1190ms backoff
+  ⟳  retry 1 e2e/specs/flow34.spec.ts:90 — retrying after 1200ms backoff
+  ⟳  retry 2 e2e/specs/flow35.spec.ts:91 — retrying after 1210ms backoff
+  ⟳  retry 0 e2e/specs/flow0.spec.ts:92 — retrying after 1220ms backoff
+  ⟳  retry 1 e2e/specs/flow1.spec.ts:93 — retrying after 1230ms backoff
+  ⟳  retry 2 e2e/specs/flow2.spec.ts:94 — retrying after 1240ms backoff
+  ⟳  retry 0 e2e/specs/flow3.spec.ts:95 — retrying after 1250ms backoff
+  ⟳  retry 1 e2e/specs/flow4.spec.ts:96 — retrying after 1260ms backoff
+  ⟳  retry 2 e2e/specs/flow5.spec.ts:97 — retrying after 1270ms backoff
+  ⟳  retry 0 e2e/specs/flow6.spec.ts:98 — retrying after 1280ms backoff
+  ⟳  retry 1 e2e/specs/flow7.spec.ts:99 — retrying after 1290ms backoff
+  ⟳  retry 2 e2e/specs/flow8.spec.ts:100 — retrying after 1300ms backoff
+  ⟳  retry 0 e2e/specs/flow9.spec.ts:101 — retrying after 1310ms backoff
+  ⟳  retry 1 e2e/specs/flow10.spec.ts:102 — retrying after 1320ms backoff
+  ⟳  retry 2 e2e/specs/flow11.spec.ts:103 — retrying after 1330ms backoff
+  ⟳  retry 0 e2e/specs/flow12.spec.ts:104 — retrying after 1340ms backoff
+  ⟳  retry 1 e2e/specs/flow13.spec.ts:105 — retrying after 1350ms backoff
+  ⟳  retry 2 e2e/specs/flow14.spec.ts:106 — retrying after 1360ms backoff
+  ⟳  retry 0 e2e/specs/flow15.spec.ts:107 — retrying after 1370ms backoff
+  ⟳  retry 1 e2e/specs/flow16.spec.ts:108 — retrying after 1380ms backoff
+  ⟳  retry 2 e2e/specs/flow17.spec.ts:109 — retrying after 1390ms backoff
+
+  2 failed, 278 passed, 4 flaky (34.2s)

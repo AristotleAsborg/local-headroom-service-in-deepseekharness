@@ -1,0 +1,3648 @@
+{
+  "object": "list",
+  "url": "/v1/workspaces",
+  "has_more": true,
+  "next_cursor": "cursor_0d9ca84cf92b461a5b2f153c",
+  "data": [
+    {
+      "id": "ws_01H0000000CD4CF",
+      "object": "workspace",
+      "created": 1793000000,
+      "name": "workspace-0-repository",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 5,
+      "active": false,
+      "owner": {
+        "id": "usr_b9e58f7dae",
+        "email": "owner0@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 0 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 600,
+        "storageGb": 20,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000001B1E126",
+      "object": "workspace",
+      "created": 1793000037,
+      "name": "workspace-1-surface",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 6,
+      "active": true,
+      "owner": {
+        "id": "usr_dc9628e41b",
+        "email": "owner1@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 1 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 601,
+        "storageGb": 21,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000002BAA175",
+      "object": "workspace",
+      "created": 1793000074,
+      "name": "workspace-2-compaction",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 7,
+      "active": true,
+      "owner": {
+        "id": "usr_47512eb180",
+        "email": "owner2@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 2 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 602,
+        "storageGb": 22,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000003B44356",
+      "object": "workspace",
+      "created": 1793000111,
+      "name": "workspace-3-threshold",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 8,
+      "active": true,
+      "owner": {
+        "id": "usr_c89a495ea6",
+        "email": "owner3@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 3 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 603,
+        "storageGb": 23,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000004CD81C2",
+      "object": "workspace",
+      "created": 1793000148,
+      "name": "workspace-4-session",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 9,
+      "active": true,
+      "owner": {
+        "id": "usr_6e284284d0",
+        "email": "owner4@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 4 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 604,
+        "storageGb": 24,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000050A3A47",
+      "object": "workspace",
+      "created": 1793000185,
+      "name": "workspace-5-projection",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 10,
+      "active": true,
+      "owner": {
+        "id": "usr_5d8ca11a3a",
+        "email": "owner5@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 5 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 605,
+        "storageGb": 25,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000060EF5DE",
+      "object": "workspace",
+      "created": 1793000222,
+      "name": "workspace-6-snapshot",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 11,
+      "active": true,
+      "owner": {
+        "id": "usr_31a5d99db2",
+        "email": "owner6@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 6 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 606,
+        "storageGb": 26,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000007A84842",
+      "object": "workspace",
+      "created": 1793000259,
+      "name": "workspace-7-registry",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 12,
+      "active": false,
+      "owner": {
+        "id": "usr_e93463843b",
+        "email": "owner7@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 7 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 607,
+        "storageGb": 27,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00000830D9E1",
+      "object": "workspace",
+      "created": 1793000296,
+      "name": "workspace-8-budget",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 13,
+      "active": true,
+      "owner": {
+        "id": "usr_b483c14582",
+        "email": "owner8@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 8 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 608,
+        "storageGb": 28,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000009695B02",
+      "object": "workspace",
+      "created": 1793000333,
+      "name": "workspace-9-token",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 14,
+      "active": true,
+      "owner": {
+        "id": "usr_7cd8b48b74",
+        "email": "owner9@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 9 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 609,
+        "storageGb": 29,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000010C2A68C",
+      "object": "workspace",
+      "created": 1793000370,
+      "name": "workspace-10-context",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 15,
+      "active": true,
+      "owner": {
+        "id": "usr_88edfebb02",
+        "email": "owner10@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 10 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 610,
+        "storageGb": 30,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00001113EB5B",
+      "object": "workspace",
+      "created": 1793000407,
+      "name": "workspace-11-window",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 16,
+      "active": true,
+      "owner": {
+        "id": "usr_e3d2cdb827",
+        "email": "owner11@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 11 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 611,
+        "storageGb": 31,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000012297C22",
+      "object": "workspace",
+      "created": 1793000444,
+      "name": "workspace-12-boundary",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 17,
+      "active": true,
+      "owner": {
+        "id": "usr_2f4267662d",
+        "email": "owner12@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 12 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 612,
+        "storageGb": 32,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000013440DF1",
+      "object": "workspace",
+      "created": 1793000481,
+      "name": "workspace-13-checkpoint",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 18,
+      "active": true,
+      "owner": {
+        "id": "usr_bb2bba458f",
+        "email": "owner13@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 13 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 613,
+        "storageGb": 33,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000014B5BB8F",
+      "object": "workspace",
+      "created": 1793000518,
+      "name": "workspace-14-retention",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 19,
+      "active": false,
+      "owner": {
+        "id": "usr_c861f5df24",
+        "email": "owner14@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 14 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 614,
+        "storageGb": 34,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000157630F6",
+      "object": "workspace",
+      "created": 1793000555,
+      "name": "workspace-15-candidate",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 20,
+      "active": true,
+      "owner": {
+        "id": "usr_5020ea323c",
+        "email": "owner15@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 15 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 615,
+        "storageGb": 35,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000016AE8C7F",
+      "object": "workspace",
+      "created": 1793000592,
+      "name": "workspace-16-region",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 21,
+      "active": true,
+      "owner": {
+        "id": "usr_65a8b5c57f",
+        "email": "owner16@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 16 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 616,
+        "storageGb": 36,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000017296095",
+      "object": "workspace",
+      "created": 1793000629,
+      "name": "workspace-17-boundary",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 22,
+      "active": true,
+      "owner": {
+        "id": "usr_ee8d60e817",
+        "email": "owner17@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 17 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 617,
+        "storageGb": 37,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00001827520A",
+      "object": "workspace",
+      "created": 1793000666,
+      "name": "workspace-18-surface",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 23,
+      "active": true,
+      "owner": {
+        "id": "usr_c49b88fdee",
+        "email": "owner18@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 18 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 618,
+        "storageGb": 38,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000019A8521C",
+      "object": "workspace",
+      "created": 1793000703,
+      "name": "workspace-19-event",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 24,
+      "active": true,
+      "owner": {
+        "id": "usr_3e4f818f5e",
+        "email": "owner19@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 19 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 619,
+        "storageGb": 39,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000201A4D47",
+      "object": "workspace",
+      "created": 1793000740,
+      "name": "workspace-20-payload",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 25,
+      "active": true,
+      "owner": {
+        "id": "usr_624a808279",
+        "email": "owner20@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 20 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 620,
+        "storageGb": 40,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00002116E7E1",
+      "object": "workspace",
+      "created": 1793000777,
+      "name": "workspace-21-deterministic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 26,
+      "active": false,
+      "owner": {
+        "id": "usr_ecf688ea4a",
+        "email": "owner21@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 21 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 621,
+        "storageGb": 41,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000227DD977",
+      "object": "workspace",
+      "created": 1793000814,
+      "name": "workspace-22-reversible",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 27,
+      "active": true,
+      "owner": {
+        "id": "usr_9f2b95526e",
+        "email": "owner22@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 22 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 622,
+        "storageGb": 42,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00002382CC9A",
+      "object": "workspace",
+      "created": 1793000851,
+      "name": "workspace-23-structural",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 28,
+      "active": true,
+      "owner": {
+        "id": "usr_8073bf8e96",
+        "email": "owner23@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 23 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 623,
+        "storageGb": 43,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000240C4B1B",
+      "object": "workspace",
+      "created": 1793000888,
+      "name": "workspace-24-heuristic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 29,
+      "active": true,
+      "owner": {
+        "id": "usr_5601e0f252",
+        "email": "owner24@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 24 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 624,
+        "storageGb": 44,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000250009FA",
+      "object": "workspace",
+      "created": 1793000925,
+      "name": "workspace-25-estimator",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 30,
+      "active": true,
+      "owner": {
+        "id": "usr_130657663a",
+        "email": "owner25@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 25 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 625,
+        "storageGb": 45,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000267005A1",
+      "object": "workspace",
+      "created": 1793000962,
+      "name": "workspace-26-conservative",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 31,
+      "active": true,
+      "owner": {
+        "id": "usr_73246f7bf2",
+        "email": "owner26@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 26 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 626,
+        "storageGb": 46,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000277250D1",
+      "object": "workspace",
+      "created": 1793000999,
+      "name": "workspace-27-skeleton",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 32,
+      "active": true,
+      "owner": {
+        "id": "usr_ab44b23261",
+        "email": "owner27@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 27 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 627,
+        "storageGb": 47,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000284753D3",
+      "object": "workspace",
+      "created": 1793001036,
+      "name": "workspace-28-identifier",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 33,
+      "active": false,
+      "owner": {
+        "id": "usr_930b32bd82",
+        "email": "owner28@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 28 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 628,
+        "storageGb": 48,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000298FB13C",
+      "object": "workspace",
+      "created": 1793001073,
+      "name": "workspace-29-handler",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 34,
+      "active": true,
+      "owner": {
+        "id": "usr_e14f37689f",
+        "email": "owner29@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 29 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 629,
+        "storageGb": 49,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000030FCBD78",
+      "object": "workspace",
+      "created": 1793001110,
+      "name": "workspace-30-transform",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 35,
+      "active": true,
+      "owner": {
+        "id": "usr_0ebe6c1b4e",
+        "email": "owner30@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 30 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 630,
+        "storageGb": 50,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000031EAE347",
+      "object": "workspace",
+      "created": 1793001147,
+      "name": "workspace-31-marker",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 36,
+      "active": true,
+      "owner": {
+        "id": "usr_5b7e1ef27f",
+        "email": "owner31@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 31 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 631,
+        "storageGb": 51,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000032D17676",
+      "object": "workspace",
+      "created": 1793001184,
+      "name": "workspace-32-digest",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 37,
+      "active": true,
+      "owner": {
+        "id": "usr_f09806a0c8",
+        "email": "owner32@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 32 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 632,
+        "storageGb": 52,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000331E1D57",
+      "object": "workspace",
+      "created": 1793001221,
+      "name": "workspace-33-prefix",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 38,
+      "active": true,
+      "owner": {
+        "id": "usr_2da7b57213",
+        "email": "owner33@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 33 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 633,
+        "storageGb": 53,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000034332E10",
+      "object": "workspace",
+      "created": 1793001258,
+      "name": "workspace-34-suffix",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 39,
+      "active": true,
+      "owner": {
+        "id": "usr_216437290a",
+        "email": "owner34@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 34 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 634,
+        "storageGb": 54,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00003590DEC4",
+      "object": "workspace",
+      "created": 1793001295,
+      "name": "workspace-35-array",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 40,
+      "active": false,
+      "owner": {
+        "id": "usr_5c127b4bb5",
+        "email": "owner35@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 35 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 635,
+        "storageGb": 55,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000036260C75",
+      "object": "workspace",
+      "created": 1793001332,
+      "name": "workspace-36-object",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 41,
+      "active": true,
+      "owner": {
+        "id": "usr_494e2ffb15",
+        "email": "owner36@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 36 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 636,
+        "storageGb": 56,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000037BD612E",
+      "object": "workspace",
+      "created": 1793001369,
+      "name": "workspace-37-scalar",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 42,
+      "active": true,
+      "owner": {
+        "id": "usr_bc59c34ad5",
+        "email": "owner37@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 37 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 637,
+        "storageGb": 57,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000038B9B712",
+      "object": "workspace",
+      "created": 1793001406,
+      "name": "workspace-38-nested",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 43,
+      "active": true,
+      "owner": {
+        "id": "usr_c0e5eeff62",
+        "email": "owner38@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 38 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 638,
+        "storageGb": 58,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000399D8D45",
+      "object": "workspace",
+      "created": 1793001443,
+      "name": "workspace-39-subtree",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 44,
+      "active": true,
+      "owner": {
+        "id": "usr_d17503fd3b",
+        "email": "owner39@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 39 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 639,
+        "storageGb": 59,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000040B38E51",
+      "object": "workspace",
+      "created": 1793001480,
+      "name": "workspace-40-header",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 5,
+      "active": true,
+      "owner": {
+        "id": "usr_cd17b8e4af",
+        "email": "owner40@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 40 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 640,
+        "storageGb": 60,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000417063E7",
+      "object": "workspace",
+      "created": 1793001517,
+      "name": "workspace-41-tail",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 6,
+      "active": true,
+      "owner": {
+        "id": "usr_fdc396a907",
+        "email": "owner41@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 41 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 641,
+        "storageGb": 61,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000042071D09",
+      "object": "workspace",
+      "created": 1793001554,
+      "name": "workspace-42-sampling",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 7,
+      "active": false,
+      "owner": {
+        "id": "usr_4624a4fcc5",
+        "email": "owner42@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 42 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 642,
+        "storageGb": 62,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00004320B11C",
+      "object": "workspace",
+      "created": 1793001591,
+      "name": "workspace-43-heartbeat",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 8,
+      "active": true,
+      "owner": {
+        "id": "usr_311ef7197f",
+        "email": "owner43@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 43 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 643,
+        "storageGb": 63,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000445DBAFF",
+      "object": "workspace",
+      "created": 1793001628,
+      "name": "workspace-44-retry",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 9,
+      "active": true,
+      "owner": {
+        "id": "usr_effffc22e0",
+        "email": "owner44@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 44 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 644,
+        "storageGb": 64,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000045BFDFFD",
+      "object": "workspace",
+      "created": 1793001665,
+      "name": "workspace-45-backoff",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 10,
+      "active": true,
+      "owner": {
+        "id": "usr_5f8687dd31",
+        "email": "owner45@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 45 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 645,
+        "storageGb": 65,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000464A3705",
+      "object": "workspace",
+      "created": 1793001702,
+      "name": "workspace-46-timeout",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 11,
+      "active": true,
+      "owner": {
+        "id": "usr_3e7adff2a7",
+        "email": "owner46@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 46 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 646,
+        "storageGb": 66,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000047CA70BE",
+      "object": "workspace",
+      "created": 1793001739,
+      "name": "workspace-47-queue",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 12,
+      "active": true,
+      "owner": {
+        "id": "usr_06cacaf911",
+        "email": "owner47@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 47 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 647,
+        "storageGb": 67,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000482AC16B",
+      "object": "workspace",
+      "created": 1793001776,
+      "name": "workspace-48-worker",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 13,
+      "active": true,
+      "owner": {
+        "id": "usr_57599c92a6",
+        "email": "owner48@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 48 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 648,
+        "storageGb": 68,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00004916E3E1",
+      "object": "workspace",
+      "created": 1793001813,
+      "name": "workspace-49-scheduler",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 14,
+      "active": false,
+      "owner": {
+        "id": "usr_a6ab35482d",
+        "email": "owner49@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 49 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 649,
+        "storageGb": 69,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00005072313C",
+      "object": "workspace",
+      "created": 1793001850,
+      "name": "workspace-50-lease",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 15,
+      "active": true,
+      "owner": {
+        "id": "usr_6c4149e9f0",
+        "email": "owner50@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 50 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 650,
+        "storageGb": 70,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00005131E304",
+      "object": "workspace",
+      "created": 1793001887,
+      "name": "workspace-51-fence",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 16,
+      "active": true,
+      "owner": {
+        "id": "usr_4e8a4228e6",
+        "email": "owner51@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 51 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 651,
+        "storageGb": 71,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00005274DBF1",
+      "object": "workspace",
+      "created": 1793001924,
+      "name": "workspace-52-epoch",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 17,
+      "active": true,
+      "owner": {
+        "id": "usr_0fc94c55c1",
+        "email": "owner52@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 52 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 652,
+        "storageGb": 72,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00005384D3B4",
+      "object": "workspace",
+      "created": 1793001961,
+      "name": "workspace-53-tombstone",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 18,
+      "active": true,
+      "owner": {
+        "id": "usr_db3a70aff9",
+        "email": "owner53@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 53 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 653,
+        "storageGb": 73,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000054368C13",
+      "object": "workspace",
+      "created": 1793001998,
+      "name": "workspace-54-repository",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 19,
+      "active": true,
+      "owner": {
+        "id": "usr_e258d10abb",
+        "email": "owner54@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 54 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 654,
+        "storageGb": 74,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000556F96EA",
+      "object": "workspace",
+      "created": 1793002035,
+      "name": "workspace-55-surface",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 20,
+      "active": true,
+      "owner": {
+        "id": "usr_fab06d7537",
+        "email": "owner55@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 55 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 655,
+        "storageGb": 75,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000056CA9045",
+      "object": "workspace",
+      "created": 1793002072,
+      "name": "workspace-56-compaction",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 21,
+      "active": false,
+      "owner": {
+        "id": "usr_272835bf98",
+        "email": "owner56@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 56 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 656,
+        "storageGb": 76,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000572D668D",
+      "object": "workspace",
+      "created": 1793002109,
+      "name": "workspace-57-threshold",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 22,
+      "active": true,
+      "owner": {
+        "id": "usr_29929eebd9",
+        "email": "owner57@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 57 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 657,
+        "storageGb": 77,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000581CEB59",
+      "object": "workspace",
+      "created": 1793002146,
+      "name": "workspace-58-session",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 23,
+      "active": true,
+      "owner": {
+        "id": "usr_0c93cad459",
+        "email": "owner58@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 58 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 658,
+        "storageGb": 78,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000059C23AB2",
+      "object": "workspace",
+      "created": 1793002183,
+      "name": "workspace-59-projection",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 24,
+      "active": true,
+      "owner": {
+        "id": "usr_82c789e45f",
+        "email": "owner59@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 59 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 659,
+        "storageGb": 79,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00006000CF2C",
+      "object": "workspace",
+      "created": 1793002220,
+      "name": "workspace-60-snapshot",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 25,
+      "active": true,
+      "owner": {
+        "id": "usr_2195c36a75",
+        "email": "owner60@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 60 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 660,
+        "storageGb": 80,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000614A65B9",
+      "object": "workspace",
+      "created": 1793002257,
+      "name": "workspace-61-registry",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 26,
+      "active": true,
+      "owner": {
+        "id": "usr_1196d82a62",
+        "email": "owner61@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 61 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 661,
+        "storageGb": 81,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000622326EC",
+      "object": "workspace",
+      "created": 1793002294,
+      "name": "workspace-62-budget",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 27,
+      "active": true,
+      "owner": {
+        "id": "usr_564a891a6c",
+        "email": "owner62@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 62 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 662,
+        "storageGb": 82,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000063ABC5E1",
+      "object": "workspace",
+      "created": 1793002331,
+      "name": "workspace-63-token",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 28,
+      "active": false,
+      "owner": {
+        "id": "usr_9f9a19ddf1",
+        "email": "owner63@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 63 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 663,
+        "storageGb": 83,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000642C79B1",
+      "object": "workspace",
+      "created": 1793002368,
+      "name": "workspace-64-context",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 29,
+      "active": true,
+      "owner": {
+        "id": "usr_c660663125",
+        "email": "owner64@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 64 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 664,
+        "storageGb": 84,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000065A5E1E6",
+      "object": "workspace",
+      "created": 1793002405,
+      "name": "workspace-65-window",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 30,
+      "active": true,
+      "owner": {
+        "id": "usr_770cecdf51",
+        "email": "owner65@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 65 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 665,
+        "storageGb": 85,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000668B8A01",
+      "object": "workspace",
+      "created": 1793002442,
+      "name": "workspace-66-boundary",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 31,
+      "active": true,
+      "owner": {
+        "id": "usr_91e7cab2bd",
+        "email": "owner66@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 66 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 666,
+        "storageGb": 86,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000067E19F50",
+      "object": "workspace",
+      "created": 1793002479,
+      "name": "workspace-67-checkpoint",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 32,
+      "active": true,
+      "owner": {
+        "id": "usr_0139d5ca00",
+        "email": "owner67@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 67 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 667,
+        "storageGb": 87,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00006899E641",
+      "object": "workspace",
+      "created": 1793002516,
+      "name": "workspace-68-retention",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 33,
+      "active": true,
+      "owner": {
+        "id": "usr_d13ff445aa",
+        "email": "owner68@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 68 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 668,
+        "storageGb": 88,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000691F4C17",
+      "object": "workspace",
+      "created": 1793002553,
+      "name": "workspace-69-candidate",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 34,
+      "active": true,
+      "owner": {
+        "id": "usr_440eabbdc3",
+        "email": "owner69@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 69 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 669,
+        "storageGb": 89,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000070A97520",
+      "object": "workspace",
+      "created": 1793002590,
+      "name": "workspace-70-region",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 35,
+      "active": false,
+      "owner": {
+        "id": "usr_f22a7a1777",
+        "email": "owner70@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 70 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 670,
+        "storageGb": 90,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000718C050C",
+      "object": "workspace",
+      "created": 1793002627,
+      "name": "workspace-71-boundary",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 36,
+      "active": true,
+      "owner": {
+        "id": "usr_f7d9e98c95",
+        "email": "owner71@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 71 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 671,
+        "storageGb": 91,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000072D6AD7E",
+      "object": "workspace",
+      "created": 1793002664,
+      "name": "workspace-72-surface",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 37,
+      "active": true,
+      "owner": {
+        "id": "usr_90db94fa29",
+        "email": "owner72@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 72 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 672,
+        "storageGb": 92,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000073BC3E43",
+      "object": "workspace",
+      "created": 1793002701,
+      "name": "workspace-73-event",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 38,
+      "active": true,
+      "owner": {
+        "id": "usr_b32a4ba0eb",
+        "email": "owner73@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 73 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 673,
+        "storageGb": 93,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000074358D06",
+      "object": "workspace",
+      "created": 1793002738,
+      "name": "workspace-74-payload",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 39,
+      "active": true,
+      "owner": {
+        "id": "usr_b3f6dd87db",
+        "email": "owner74@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 74 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 674,
+        "storageGb": 94,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000075CCD827",
+      "object": "workspace",
+      "created": 1793002775,
+      "name": "workspace-75-deterministic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 40,
+      "active": true,
+      "owner": {
+        "id": "usr_cb0373272e",
+        "email": "owner75@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 75 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 675,
+        "storageGb": 95,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000076B58F0F",
+      "object": "workspace",
+      "created": 1793002812,
+      "name": "workspace-76-reversible",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 41,
+      "active": true,
+      "owner": {
+        "id": "usr_767193fa1d",
+        "email": "owner76@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 76 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 676,
+        "storageGb": 96,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000077E47005",
+      "object": "workspace",
+      "created": 1793002849,
+      "name": "workspace-77-structural",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 42,
+      "active": false,
+      "owner": {
+        "id": "usr_44e426d440",
+        "email": "owner77@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 77 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 677,
+        "storageGb": 97,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000783DB991",
+      "object": "workspace",
+      "created": 1793002886,
+      "name": "workspace-78-heuristic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 43,
+      "active": true,
+      "owner": {
+        "id": "usr_61b358f69a",
+        "email": "owner78@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 78 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 678,
+        "storageGb": 98,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000079220E65",
+      "object": "workspace",
+      "created": 1793002923,
+      "name": "workspace-79-estimator",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 44,
+      "active": true,
+      "owner": {
+        "id": "usr_049109015a",
+        "email": "owner79@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 79 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 679,
+        "storageGb": 99,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000806E9C1E",
+      "object": "workspace",
+      "created": 1793002960,
+      "name": "workspace-80-conservative",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 5,
+      "active": true,
+      "owner": {
+        "id": "usr_2c63810143",
+        "email": "owner80@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 80 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 680,
+        "storageGb": 20,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000815133EC",
+      "object": "workspace",
+      "created": 1793002997,
+      "name": "workspace-81-skeleton",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 6,
+      "active": true,
+      "owner": {
+        "id": "usr_bd50d7bbbd",
+        "email": "owner81@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 81 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 681,
+        "storageGb": 21,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000082D23406",
+      "object": "workspace",
+      "created": 1793003034,
+      "name": "workspace-82-identifier",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 7,
+      "active": true,
+      "owner": {
+        "id": "usr_ddbba7397f",
+        "email": "owner82@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 82 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 682,
+        "storageGb": 22,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00008364EE6F",
+      "object": "workspace",
+      "created": 1793003071,
+      "name": "workspace-83-handler",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 8,
+      "active": true,
+      "owner": {
+        "id": "usr_b29660970f",
+        "email": "owner83@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 83 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 683,
+        "storageGb": 23,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000841B2A08",
+      "object": "workspace",
+      "created": 1793003108,
+      "name": "workspace-84-transform",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 9,
+      "active": false,
+      "owner": {
+        "id": "usr_9b36445fad",
+        "email": "owner84@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 84 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 684,
+        "storageGb": 24,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000085E5C8CC",
+      "object": "workspace",
+      "created": 1793003145,
+      "name": "workspace-85-marker",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 10,
+      "active": true,
+      "owner": {
+        "id": "usr_147a62fb3f",
+        "email": "owner85@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 85 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 685,
+        "storageGb": 25,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000867770DE",
+      "object": "workspace",
+      "created": 1793003182,
+      "name": "workspace-86-digest",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 11,
+      "active": true,
+      "owner": {
+        "id": "usr_2ccfc7ab93",
+        "email": "owner86@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 86 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 686,
+        "storageGb": 26,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000878AD732",
+      "object": "workspace",
+      "created": 1793003219,
+      "name": "workspace-87-prefix",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 12,
+      "active": true,
+      "owner": {
+        "id": "usr_e65594b775",
+        "email": "owner87@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 87 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 687,
+        "storageGb": 27,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000886CB460",
+      "object": "workspace",
+      "created": 1793003256,
+      "name": "workspace-88-suffix",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 13,
+      "active": true,
+      "owner": {
+        "id": "usr_05c3d23960",
+        "email": "owner88@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 88 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 688,
+        "storageGb": 28,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000089B3C8DB",
+      "object": "workspace",
+      "created": 1793003293,
+      "name": "workspace-89-array",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 14,
+      "active": true,
+      "owner": {
+        "id": "usr_a7e0cc7e1b",
+        "email": "owner89@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 89 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 689,
+        "storageGb": 29,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000090E70FB4",
+      "object": "workspace",
+      "created": 1793003330,
+      "name": "workspace-90-object",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 15,
+      "active": true,
+      "owner": {
+        "id": "usr_88e1ebbb57",
+        "email": "owner90@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 90 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 690,
+        "storageGb": 30,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000091C5A820",
+      "object": "workspace",
+      "created": 1793003367,
+      "name": "workspace-91-scalar",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 16,
+      "active": false,
+      "owner": {
+        "id": "usr_e846d576f8",
+        "email": "owner91@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 91 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 691,
+        "storageGb": 31,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00009222170D",
+      "object": "workspace",
+      "created": 1793003404,
+      "name": "workspace-92-nested",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 17,
+      "active": true,
+      "owner": {
+        "id": "usr_ca38995806",
+        "email": "owner92@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 92 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 692,
+        "storageGb": 32,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000093121D85",
+      "object": "workspace",
+      "created": 1793003441,
+      "name": "workspace-93-subtree",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 18,
+      "active": true,
+      "owner": {
+        "id": "usr_d6148d80e7",
+        "email": "owner93@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 93 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 693,
+        "storageGb": 33,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0000940DFA99",
+      "object": "workspace",
+      "created": 1793003478,
+      "name": "workspace-94-header",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 19,
+      "active": true,
+      "owner": {
+        "id": "usr_9e4a792b4f",
+        "email": "owner94@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 94 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 694,
+        "storageGb": 34,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000095C448AE",
+      "object": "workspace",
+      "created": 1793003515,
+      "name": "workspace-95-tail",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 20,
+      "active": true,
+      "owner": {
+        "id": "usr_7046b62c2a",
+        "email": "owner95@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 95 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 695,
+        "storageGb": 35,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000096654507",
+      "object": "workspace",
+      "created": 1793003552,
+      "name": "workspace-96-sampling",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 21,
+      "active": true,
+      "owner": {
+        "id": "usr_a4d71a983d",
+        "email": "owner96@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 96 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 696,
+        "storageGb": 36,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000097CFD569",
+      "object": "workspace",
+      "created": 1793003589,
+      "name": "workspace-97-heartbeat",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 22,
+      "active": true,
+      "owner": {
+        "id": "usr_742c34735d",
+        "email": "owner97@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 97 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 697,
+        "storageGb": 37,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0000980B5DC0",
+      "object": "workspace",
+      "created": 1793003626,
+      "name": "workspace-98-retry",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 23,
+      "active": false,
+      "owner": {
+        "id": "usr_3e532de331",
+        "email": "owner98@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 98 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 698,
+        "storageGb": 38,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0000991FFEA4",
+      "object": "workspace",
+      "created": 1793003663,
+      "name": "workspace-99-backoff",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 24,
+      "active": true,
+      "owner": {
+        "id": "usr_5e55ef3310",
+        "email": "owner99@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 99 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 699,
+        "storageGb": 39,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0001008FB5BD",
+      "object": "workspace",
+      "created": 1793003700,
+      "name": "workspace-100-timeout",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 25,
+      "active": true,
+      "owner": {
+        "id": "usr_7c533809e6",
+        "email": "owner100@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 100 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 700,
+        "storageGb": 40,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000101995569",
+      "object": "workspace",
+      "created": 1793003737,
+      "name": "workspace-101-queue",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 26,
+      "active": true,
+      "owner": {
+        "id": "usr_7a13b2fd7c",
+        "email": "owner101@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 101 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 701,
+        "storageGb": 41,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0001025698A2",
+      "object": "workspace",
+      "created": 1793003774,
+      "name": "workspace-102-worker",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 27,
+      "active": true,
+      "owner": {
+        "id": "usr_6eedf45c4b",
+        "email": "owner102@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 102 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 702,
+        "storageGb": 42,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000103EE3800",
+      "object": "workspace",
+      "created": 1793003811,
+      "name": "workspace-103-scheduler",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 28,
+      "active": true,
+      "owner": {
+        "id": "usr_c3d88babc1",
+        "email": "owner103@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 103 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 703,
+        "storageGb": 43,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00010400CFA1",
+      "object": "workspace",
+      "created": 1793003848,
+      "name": "workspace-104-lease",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 29,
+      "active": true,
+      "owner": {
+        "id": "usr_83770c0178",
+        "email": "owner104@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 104 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 704,
+        "storageGb": 44,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000105A532BD",
+      "object": "workspace",
+      "created": 1793003885,
+      "name": "workspace-105-fence",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 30,
+      "active": false,
+      "owner": {
+        "id": "usr_14683cf897",
+        "email": "owner105@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 105 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 705,
+        "storageGb": 45,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000106B67EEA",
+      "object": "workspace",
+      "created": 1793003922,
+      "name": "workspace-106-epoch",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 31,
+      "active": true,
+      "owner": {
+        "id": "usr_78da01d5db",
+        "email": "owner106@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 106 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 706,
+        "storageGb": 46,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00010760B813",
+      "object": "workspace",
+      "created": 1793003959,
+      "name": "workspace-107-tombstone",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 32,
+      "active": true,
+      "owner": {
+        "id": "usr_1627ba58bb",
+        "email": "owner107@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 107 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 707,
+        "storageGb": 47,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000108CA64C9",
+      "object": "workspace",
+      "created": 1793003996,
+      "name": "workspace-108-repository",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 33,
+      "active": true,
+      "owner": {
+        "id": "usr_3b50c3383c",
+        "email": "owner108@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 108 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 708,
+        "storageGb": 48,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0001096A68B0",
+      "object": "workspace",
+      "created": 1793004033,
+      "name": "workspace-109-surface",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 34,
+      "active": true,
+      "owner": {
+        "id": "usr_f3cb1cb144",
+        "email": "owner109@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 109 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 709,
+        "storageGb": 49,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00011018D999",
+      "object": "workspace",
+      "created": 1793004070,
+      "name": "workspace-110-compaction",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 35,
+      "active": true,
+      "owner": {
+        "id": "usr_f883ea3076",
+        "email": "owner110@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 110 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 710,
+        "storageGb": 50,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000111178061",
+      "object": "workspace",
+      "created": 1793004107,
+      "name": "workspace-111-threshold",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 36,
+      "active": true,
+      "owner": {
+        "id": "usr_d13d2fb19e",
+        "email": "owner111@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 111 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 711,
+        "storageGb": 51,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000112C49300",
+      "object": "workspace",
+      "created": 1793004144,
+      "name": "workspace-112-session",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 37,
+      "active": false,
+      "owner": {
+        "id": "usr_4c602d8aef",
+        "email": "owner112@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 112 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 712,
+        "storageGb": 52,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00011374E601",
+      "object": "workspace",
+      "created": 1793004181,
+      "name": "workspace-113-projection",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 38,
+      "active": true,
+      "owner": {
+        "id": "usr_aa05f09a3e",
+        "email": "owner113@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 113 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 713,
+        "storageGb": 53,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000114ADE2D3",
+      "object": "workspace",
+      "created": 1793004218,
+      "name": "workspace-114-snapshot",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 39,
+      "active": true,
+      "owner": {
+        "id": "usr_b0533965f3",
+        "email": "owner114@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 114 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 714,
+        "storageGb": 54,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000115B7CCB5",
+      "object": "workspace",
+      "created": 1793004255,
+      "name": "workspace-115-registry",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 40,
+      "active": true,
+      "owner": {
+        "id": "usr_030c714320",
+        "email": "owner115@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 115 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 715,
+        "storageGb": 55,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0001167A93E3",
+      "object": "workspace",
+      "created": 1793004292,
+      "name": "workspace-116-budget",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 41,
+      "active": true,
+      "owner": {
+        "id": "usr_802beef884",
+        "email": "owner116@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 116 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 716,
+        "storageGb": 56,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000117B21F92",
+      "object": "workspace",
+      "created": 1793004329,
+      "name": "workspace-117-token",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 42,
+      "active": true,
+      "owner": {
+        "id": "usr_526fb84885",
+        "email": "owner117@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 117 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 717,
+        "storageGb": 57,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000118DA0B20",
+      "object": "workspace",
+      "created": 1793004366,
+      "name": "workspace-118-context",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 43,
+      "active": true,
+      "owner": {
+        "id": "usr_c5f8febe8d",
+        "email": "owner118@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 118 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 718,
+        "storageGb": 58,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0001194C170A",
+      "object": "workspace",
+      "created": 1793004403,
+      "name": "workspace-119-window",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 44,
+      "active": false,
+      "owner": {
+        "id": "usr_bcd8bcdcb8",
+        "email": "owner119@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 119 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 719,
+        "storageGb": 59,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000120480ED5",
+      "object": "workspace",
+      "created": 1793004440,
+      "name": "workspace-120-boundary",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 5,
+      "active": true,
+      "owner": {
+        "id": "usr_487b20f750",
+        "email": "owner120@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 120 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 720,
+        "storageGb": 60,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00012139A98C",
+      "object": "workspace",
+      "created": 1793004477,
+      "name": "workspace-121-checkpoint",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 6,
+      "active": true,
+      "owner": {
+        "id": "usr_26478ab57a",
+        "email": "owner121@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 121 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 721,
+        "storageGb": 61,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00012248F84C",
+      "object": "workspace",
+      "created": 1793004514,
+      "name": "workspace-122-retention",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 7,
+      "active": true,
+      "owner": {
+        "id": "usr_80765b9965",
+        "email": "owner122@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 122 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 722,
+        "storageGb": 62,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0001231313A3",
+      "object": "workspace",
+      "created": 1793004551,
+      "name": "workspace-123-candidate",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 8,
+      "active": true,
+      "owner": {
+        "id": "usr_44393060a3",
+        "email": "owner123@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 123 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 723,
+        "storageGb": 63,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00012424A2CB",
+      "object": "workspace",
+      "created": 1793004588,
+      "name": "workspace-124-region",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 9,
+      "active": true,
+      "owner": {
+        "id": "usr_e57d3d1fbc",
+        "email": "owner124@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 124 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 724,
+        "storageGb": 64,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000125706039",
+      "object": "workspace",
+      "created": 1793004625,
+      "name": "workspace-125-boundary",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 10,
+      "active": true,
+      "owner": {
+        "id": "usr_9860c01f84",
+        "email": "owner125@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 125 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 725,
+        "storageGb": 65,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000126038017",
+      "object": "workspace",
+      "created": 1793004662,
+      "name": "workspace-126-surface",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 11,
+      "active": false,
+      "owner": {
+        "id": "usr_7e15c6c94d",
+        "email": "owner126@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 126 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 726,
+        "storageGb": 66,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000127AED414",
+      "object": "workspace",
+      "created": 1793004699,
+      "name": "workspace-127-event",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 12,
+      "active": true,
+      "owner": {
+        "id": "usr_55fc6f6793",
+        "email": "owner127@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 127 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 727,
+        "storageGb": 67,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H0001281382C0",
+      "object": "workspace",
+      "created": 1793004736,
+      "name": "workspace-128-payload",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 13,
+      "active": true,
+      "owner": {
+        "id": "usr_1073b85c77",
+        "email": "owner128@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 128 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 728,
+        "storageGb": 68,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-8",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H000129046258",
+      "object": "workspace",
+      "created": 1793004773,
+      "name": "workspace-129-deterministic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 14,
+      "active": true,
+      "owner": {
+        "id": "usr_8b9026c68f",
+        "email": "owner129@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 129 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 729,
+        "storageGb": 69,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-9",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H0001304CF0D5",
+      "object": "workspace",
+      "created": 1793004810,
+      "name": "workspace-130-reversible",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 15,
+      "active": true,
+      "owner": {
+        "id": "usr_613ff944ef",
+        "email": "owner130@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 130 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 730,
+        "storageGb": 70,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-10",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000131B28417",
+      "object": "workspace",
+      "created": 1793004847,
+      "name": "workspace-131-structural",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 16,
+      "active": true,
+      "owner": {
+        "id": "usr_dc10124d6c",
+        "email": "owner131@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 131 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 731,
+        "storageGb": 71,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-11",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00013270E231",
+      "object": "workspace",
+      "created": 1793004884,
+      "name": "workspace-132-heuristic",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 17,
+      "active": true,
+      "owner": {
+        "id": "usr_d42263a182",
+        "email": "owner132@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 132 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 732,
+        "storageGb": 72,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-0",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000133C313CD",
+      "object": "workspace",
+      "created": 1793004921,
+      "name": "workspace-133-estimator",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 18,
+      "active": false,
+      "owner": {
+        "id": "usr_d801708178",
+        "email": "owner133@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 133 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 733,
+        "storageGb": 73,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-1",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H00013468B7FE",
+      "object": "workspace",
+      "created": 1793004958,
+      "name": "workspace-134-conservative",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 19,
+      "active": true,
+      "owner": {
+        "id": "usr_7da5e35665",
+        "email": "owner134@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 134 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 734,
+        "storageGb": 74,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-2",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H0001353A90C7",
+      "object": "workspace",
+      "created": 1793004995,
+      "name": "workspace-135-skeleton",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 20,
+      "active": true,
+      "owner": {
+        "id": "usr_cdfa53d056",
+        "email": "owner135@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 135 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 735,
+        "storageGb": 75,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-3",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H000136CA6C81",
+      "object": "workspace",
+      "created": 1793005032,
+      "name": "workspace-136-identifier",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 21,
+      "active": true,
+      "owner": {
+        "id": "usr_3053698013",
+        "email": "owner136@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 136 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 736,
+        "storageGb": 76,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-4",
+        "env-stage"
+      ]
+    },
+    {
+      "id": "ws_01H000137E309BE",
+      "object": "workspace",
+      "created": 1793005069,
+      "name": "workspace-137-handler",
+      "region": "ap-northeast-1",
+      "plan": "enterprise",
+      "seats": 22,
+      "active": true,
+      "owner": {
+        "id": "usr_ca12e13ab2",
+        "email": "owner137@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 137 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 737,
+        "storageGb": 77,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-5",
+        "env-dev"
+      ]
+    },
+    {
+      "id": "ws_01H00013821794E",
+      "object": "workspace",
+      "created": 1793005106,
+      "name": "workspace-138-transform",
+      "region": "us-east-1",
+      "plan": "free",
+      "seats": 23,
+      "active": true,
+      "owner": {
+        "id": "usr_ed49c76d30",
+        "email": "owner138@example.com",
+        "verified": true
+      },
+      "description": "Workspace number 138 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 738,
+        "storageGb": 78,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-6",
+        "env-prod"
+      ]
+    },
+    {
+      "id": "ws_01H00013983E857",
+      "object": "workspace",
+      "created": 1793005143,
+      "name": "workspace-139-marker",
+      "region": "eu-west-2",
+      "plan": "team",
+      "seats": 24,
+      "active": true,
+      "owner": {
+        "id": "usr_ad035335be",
+        "email": "owner139@example.com",
+        "verified": false
+      },
+      "description": "Workspace number 139 exists to hold the pipelines, dashboards and alert rules for one product team, together with the retention policy, the on-call rotation and the incident history that the team agreed on during planning. Callers of this endpoint almost never read this field.",
+      "limits": {
+        "requestsPerMinute": 739,
+        "storageGb": 79,
+        "resetsAt": "2026-04-01T00:00:00Z"
+      },
+      "tags": [
+        "pipeline",
+        "team-7",
+        "env-stage"
+      ]
+    }
+  ]
+}
