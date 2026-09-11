@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to dsh-paths.json (beside dsh-paths.mjs) to pin a layout that auto-detection cannot work out. Delete any key you do not need; an absent key falls back to detection. Relative paths resolve against this file. Precedence, highest first: command line, environment, this file, detection.",
+
+  "profile": "web",
+  "dshHome": "D:/dsh/home",
+  "runtimeRoot": "D:/dsh/runtime/dsh"
+}
