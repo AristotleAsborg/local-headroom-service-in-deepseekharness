@@ -594,7 +594,7 @@ dsh-paths.example.json）：
   去哪: README.txt
 
   想看什么: 发布与授权、出处声明
-  去哪: README.txt 末节 / NOTICE / PUBLISHING.md
+  去哪: README.txt 末节 / NOTICE / 本文件末节（发布说明）
 
   想看什么: 独立安装包
   去哪: headroom-package/（自带解析器与冒烟测试，可整体拷走）
